@@ -24,30 +24,30 @@ There are two kinds of "building on" in this plan:
 
 > The chains can overlap. Code-dependency chains (B, C) must be built in order. Skill chains (I, J) can be sampled in any order once their prerequisites are met.
 
-### Phase 1 — Foundations (Months 1–2)
+### Phase 1 — Foundations
 - **A-1 Farmer-Froilan-Java** → locks in Java OOP, interfaces, multi-inheritance. *Verify: JUnit suite green, UML generated.*
 - **A-2 Farmer-Froilan-Python** → port the same model to ABCs/Protocols; write the Java↔Python comparison. *Verify: pytest green, COMPARISON.md complete.*
 - **B-1 Web-Scraper-Postgres-Pipeline** → first automated pipeline + scheduled GitHub Action. *Verify: CI cron runs, idempotent loader proven by running twice.*
 - **J-01 DSA-OOP-Fundamentals** → algorithmic baseline (good in parallel, evenings). *Verify: all sorting/structure tests pass.*
 
-### Phase 2 — Core Stack (Months 3–5)
+### Phase 2 — Core Stack
 - **A-3 Spring-Boot-REST-API** → Java meets a real web server; JPA, JWT, Swagger. *Verify: MockMvc tests pass, Swagger UI lists every endpoint.*
 - **C-1 Full-Stack-Job-Board** → FastAPI + React + JWT, deployed. *Verify: deployed URL reachable, auth round-trips.*
 - **C-2 Dockerized-Microservices** → containerize C-1's patterns; Compose, Nginx, Celery, GHCR. *Verify: `docker compose up` brings the whole stack online.*
 - **J-02 Git-Collaboration-Workflow** → professional git habits (parallel). *Verify: pre-commit hooks fire, PR template in use.*
 
-### Phase 3 — Data Engineering (Months 5–8)
+### Phase 3 — Data Engineering
 - **B-2 Banking-Data-Platform** → Polars + dbt medallion + IsolationForest. *Verify: `dbt build` passes all tests, Gold tables materialized.*
 - **B-3 Banking-Interface-Fraud-UI** → Spring Boot + React reading B-2's Gold tables. *Verify: UI renders live Gold data, axe audit passes.*
 - **I-01 → I-03** SQL / ETL-ELT / dbt deep dives → the theory behind B. *Verify: every exercise solved.*
 - **I-06 → I-08** Spark / Kafka / Airflow → distributed + orchestration concepts.
 
-### Phase 4 — Infrastructure (Months 7–10)
+### Phase 4 — Infrastructure
 - **C-3 Ops-Management-Dashboard** → WebSockets + RBAC + real-time UI. *Verify: two clients see live updates.*
 - **C-4 Kubernetes-IaC-Deployment** (from scratch) → Terraform + K8s + Helm. *Verify: `helm upgrade` does a zero-downtime rollout.*
 - **J-04a/J-04b/J-05/J-06** Cloud + Networking + Terraform → IaC fluency. *Verify: `terraform apply` provisions, `destroy` tears down cleanly.*
 
-### Phase 5 — Capstones (Months 9–12)
+### Phase 5 — Capstones
 - **A-4 Entrada-Clone** → full-stack leasing platform; domain advantage + Java depth + PDF generation. *Verify: lease PDF generates, occupancy analytics correct.*
 - **I-04/I-05/I-09/I-10/I-11** → enterprise data tools (Snowflake, Azure, Teradata, Tableau, Django/Flask) to round out breadth.
 - **J-03 AI-Augmented-Development** → reflect on the AI workflow used throughout.
