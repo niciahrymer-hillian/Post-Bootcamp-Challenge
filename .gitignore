@@ -1,0 +1,12 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Secrets
+.env
+*.local
+
+# License build cache (only relevant in the dev container)
+.license-templates/
