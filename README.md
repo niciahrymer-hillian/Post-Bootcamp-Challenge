@@ -1,7 +1,7 @@
 # 🎯 Post-Bootcamp-Challenge
 ### A self-directed 30-project engineering portfolio — built like a real team builds, organized into dependency chains.
 
-[![Projects](https://img.shields.io/badge/Projects-30-8A2BE2?style=for-the-badge)](#-the-full-project-map)
+[![Projects](https://img.shields.io/badge/Projects-40-8A2BE2?style=for-the-badge)](#-the-full-project-map)
 [![Chains](https://img.shields.io/badge/Chains-A–J-378ADD?style=for-the-badge)](docs/CHAIN_MAP.md)
 [![Languages](https://img.shields.io/badge/Languages-Java%20|%20Python%20|%20Go%20|%20TypeScript%20|%20SQL-0EA5E9?style=for-the-badge)](#-skills-matrix)
 [![Status](https://img.shields.io/badge/Status-In%20Progress-F59E0B?style=for-the-badge)](#-the-full-project-map)
@@ -21,17 +21,17 @@ This is the index repo for a self-built, post-bootcamp engineering challenge: **
                           (this index repo)
                                   │
     ┌───────────┬───────────┬─────┴─────┬─────────────┬─────────────┐
-    ▼           ▼           ▼           ▼             ▼             ▼
- CHAIN A     CHAIN B     CHAIN C     CHAIN I       CHAIN J     (D–H reserved)
- Java        Banking     Full-Stack  Data Eng.     Qualify-the
- Mastery     + FinTech   + Infra     Deep Dives    -Resume
-    │           │           │           │             │
- 4 repos     3 repos     4 repos    11 repos       7 repos
-    │           │           │
- code+skill  CODE DEP.   CODE DEP.   skill chains   skill + mini-projects
- chain       B-1→B-2→B-3 C-1→C-2     (each repo     (DSA, Git, AI, Cloud,
-             (data flows  →C-3→C-4    stands alone)  Networking, Terraform)
-             into UI)
+    ▼       ▼       ▼       ▼       ▼       ▼       ▼       ▼       ▼       ▼
+  CHAIN   CHAIN   CHAIN   CHAIN   CHAIN   CHAIN   CHAIN   CHAIN   CHAIN   CHAIN
+    A       B       C       D       E       F       G       H       I       J
+  Java   Banking Full-   Data &   AI    Systems Prop-  Business Data    Qualify
+  Mastery +Fin-  Stack   ML Pipe- Prod-  & Lang  Tech   & Found- Eng.    -the
+         Tech   +Infra   lines   ucts  (scratch)        ations  Deep    Resume
+    │       │       │       │       │       │       │       │     Dives    │
+  4 repo  3 repo  4 repo  3 repo  3 repo  2 repo  1 repo  2 repo 11 repo 7 repo
+
+  Total: 40 project repos + this index repo.
+  Code-dependency chains: B (B-1→B-2→B-3), C (C-1→C-2→C-3→C-4).
 ```
 
 <!-- SCREENSHOT PLACEHOLDER:
@@ -78,6 +78,38 @@ It is also a **learning system**: every repo teaches the concepts it uses, so th
 | C-3 | Ops-Management-Dashboard | WebSockets, RBAC, real-time UI | ⬜ | [↗](https://github.com/niciahrymer-hillian/Ops-Management-Dashboard) |
 | C-4 | Kubernetes-IaC-Deployment | Terraform + K8s + Helm (from scratch) | ⬜ | [↗](https://github.com/niciahrymer-hillian/Kubernetes-IaC-Deployment) |
 
+### Chain D — Data & ML Pipelines
+| # | Project | Focus | Status | Repo |
+|---|---------|-------|--------|------|
+| D-1 | ML-Model-Serving-API | Train, evaluate, serve behind FastAPI | ⬜ | [↗](https://github.com/niciahrymer-hillian/ML-Model-Serving-API) |
+| D-2 | Streaming-Data-Pipeline | Real-time ingest + processing | ⬜ | [↗](https://github.com/niciahrymer-hillian/Streaming-Data-Pipeline) |
+| D-3 | Databricks-Medallion-ETL | Bronze→Silver→Gold on Delta Lake | ⬜ | [↗](https://github.com/niciahrymer-hillian/Databricks-Medallion-ETL) |
+
+### Chain E — AI Products
+| # | Project | Focus | Status | Repo |
+|---|---------|-------|--------|------|
+| E-1 | AI-TTS-Notes | Natural-voice TTS + note-taking | ⬜ | [↗](https://github.com/niciahrymer-hillian/AI-TTS-Notes) |
+| E-2 | AI-Social-Media-Manager | Schedule/auto-post, notifications, analytics | ⬜ | [↗](https://github.com/niciahrymer-hillian/AI-Social-Media-Manager) |
+| E-3 | AI-Agent-Assistant | Tool-using agent with memory | ⬜ | [↗](https://github.com/niciahrymer-hillian/AI-Agent-Assistant) |
+
+### Chain F — Systems & Languages (from scratch)
+| # | Project | Focus | Status | Repo |
+|---|---------|-------|--------|------|
+| F-1 | HTTP-Server-From-Scratch | Raw sockets → Go core loop | ⬜ | [↗](https://github.com/niciahrymer-hillian/HTTP-Server-From-Scratch) |
+| F-2 | Custom-Language-Interpreter | Lexer, parser, AST, REPL | ⬜ | [↗](https://github.com/niciahrymer-hillian/Custom-Language-Interpreter) |
+
+### Chain G — PropTech
+| # | Project | Focus | Status | Repo |
+|---|---------|-------|--------|------|
+| G-1 | Leasing-Agent-App | Renter↔apartment matching (HomeMatch-style) | ⬜ | [↗](https://github.com/niciahrymer-hillian/Leasing-Agent-App) |
+| G-2 | Entrada-Clone | Full leasing/occupancy platform (shared with Chain A) | ⬜ | [↗](https://github.com/niciahrymer-hillian/Entrada-Clone) |
+
+### Chain H — Business & Foundations
+| # | Project | Focus | Status | Repo |
+|---|---------|-------|--------|------|
+| H-1 | CLI-Task-Manager | Foundations: clean Python + SQLite CLI | ⬜ | [↗](https://github.com/niciahrymer-hillian/CLI-Task-Manager) |
+| H-2 | BD-Marketing-CRM | BD + marketing CRM with AI email drafts | ⬜ | [↗](https://github.com/niciahrymer-hillian/BD-Marketing-CRM) |
+
 ### Chain I — Data Engineering Deep Dives (skill chain)
 | # | Project | Status | Repo |
 |---|---------|--------|------|
@@ -104,14 +136,7 @@ It is also a **learning system**: every repo teaches the concepts it uses, so th
 | J-05 | Networking-Basics | ⬜ | [↗](https://github.com/niciahrymer-hillian/Networking-Basics) |
 | J-06 | IaC-Terraform | ⬜ | [↗](https://github.com/niciahrymer-hillian/IaC-Terraform) |
 
-### Reserved
-| # | Project | Status | Notes |
-|---|---------|--------|-------|
-| 30 | _To be selected_ | 🔒 | 30th slot pending — candidate pool below |
-
-> **The 30th project is not yet chosen.** Candidates parked from the original 22-project roadmap: `CLI-Task-Manager`, `HTTP-Server-From-Scratch`, `ML-Model-Serving-API`, `Custom-Language-Interpreter`, `BD/Marketing-CRM`, `Streaming-Pipeline`, `Databricks-ETL`, `AI-TTS-Notes`, `Social-Media-Manager`, `Leasing-App`, `AI-Agent`.
->
-> **Chains D–H** are reserved in the numbering for future expansion and will draw from that same candidate pool. They are intentionally not yet specified.
+> All ten chains (A–J) are now defined — **40 project repos** in total. Chains D–H were scaffolded from the original roadmap's parked candidate pool. Entrada-Clone is shared between Chain A (Java capstone) and Chain G (PropTech) as a single repo.
 
 ## 🧰 Skills Matrix
 

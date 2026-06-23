@@ -30,10 +30,20 @@ CROSS-CHAIN REINFORCEMENT
   J-04b Cloud-Azure  +  I-05 Azure-Data-Stack                  (platform ↔ data services)
   I-01 SQL + I-03 dbt       ╌╌▶ B-2 Banking-Data-Platform        (theory → applied)
 
-RESERVED
-  #30 (to be selected)  +  Chains D–H  ── drawn from: CLI Task Manager, HTTP Server,
-  ML Serving API, Custom Language Interpreter, BD/Marketing CRM, Streaming Pipeline,
-  Databricks ETL, AI TTS+Notes, Social Media Manager, Leasing App, AI Agent
+CHAIN D — Data & ML Pipelines (skill chain)
+  ML-Model-Serving-API ╌╌▶ Streaming-Data-Pipeline ╌╌▶ Databricks-Medallion-ETL
+
+CHAIN E — AI Products (skill chain)
+  AI-TTS-Notes ╌╌▶ AI-Social-Media-Manager ╌╌▶ AI-Agent-Assistant
+
+CHAIN F — Systems & Languages (from scratch, no scaffolding)
+  HTTP-Server-From-Scratch ╌╌▶ Custom-Language-Interpreter
+
+CHAIN G — PropTech
+  Leasing-Agent-App   +   Entrada-Clone (shared capstone, lives in Chain A)
+
+CHAIN H — Business & Foundations
+  CLI-Task-Manager (foundations starter)   +   BD-Marketing-CRM
 ```
 
 ## Build-Order Quick Reference

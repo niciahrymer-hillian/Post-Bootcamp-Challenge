@@ -64,6 +64,12 @@ There are two kinds of "building on" in this plan:
 
 ---
 
-## The "30th Project" and Chains D–H
+## Chains D–H
 
-The numbering reserves room for a 30th project and Chains D–H, drawn from the parked candidates: CLI Task Manager, HTTP Server from scratch, ML Model Serving API, Custom Language Interpreter, BD/Marketing CRM, Streaming Pipeline, Databricks ETL, AI TTS + Notes, Social Media Manager, Leasing App, AI Agent. These will be specified after the core A/B/C/I/J chains are underway.
+All ten chains are now defined (40 project repos total). Chains D–H were built from the original roadmap's parked candidates:
+
+- **D — Data & ML Pipelines:** ML-Model-Serving-API → Streaming-Data-Pipeline → Databricks-Medallion-ETL. Fits after the Chain I data deep dives.
+- **E — AI Products:** AI-TTS-Notes → AI-Social-Media-Manager → AI-Agent-Assistant. Your AI-prompting background's showcase chain; the agent is the highest-signal capstone.
+- **F — Systems & Languages (from scratch):** HTTP-Server-From-Scratch → Custom-Language-Interpreter. No scaffolding by design — deep technical-understanding signal, and a low-pressure way to learn Go.
+- **G — PropTech:** Leasing-Agent-App + Entrada-Clone (shared with Chain A). Domain advantage from professional leasing/occupancy experience.
+- **H — Business & Foundations:** CLI-Task-Manager (the foundations starter — do this first of everything) + BD-Marketing-CRM.
