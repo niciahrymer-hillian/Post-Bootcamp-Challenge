@@ -30,8 +30,15 @@ CROSS-CHAIN REINFORCEMENT
   J-04b Cloud-Azure  +  I-05 Azure-Data-Stack                  (platform ↔ data services)
   I-01 SQL + I-03 dbt       ╌╌▶ B-2 Banking-Data-Platform        (theory → applied)
 
-CHAIN D — Data & ML Pipelines (skill chain)
-  ML-Model-Serving-API ╌╌▶ Streaming-Data-Pipeline ╌╌▶ Databricks-Medallion-ETL
+CHAIN D — Data & ML Pipelines (skill chain + applied data-eng trio)
+  ML-Model-Serving-API ╌╌▶ Databricks-Medallion-ETL
+
+  Applied data-engineering trio (data in motion → at rest → as code):
+  Data-Platform-IaC ──▶ Realtime-Event-Pipeline ──▶ Snowflake-dbt-Warehouse
+   (Terraform provisions    (Kafka → Spark             (Snowflake + dbt
+    the S3 sink + Kafka +     Structured Streaming,      staging→marts ELT,
+    Snowflake objects)        windowed aggregation)      tests + lineage)
+   Applied counterparts of the Chain I deep dives: Spark, Kafka, Snowflake, dbt (+ Terraform from Chain J).
 
 CHAIN E — AI Products (skill chain)
   AI-TTS-Notes ╌╌▶ AI-Social-Media-Manager ╌╌▶ AI-Agent-Assistant

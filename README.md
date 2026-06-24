@@ -1,7 +1,7 @@
 # 🎯 Post-Bootcamp-Challenge
 ### A self-directed 30-project engineering portfolio — built like a real team builds, organized into dependency chains.
 
-[![Projects](https://img.shields.io/badge/Projects-40-8A2BE2?style=for-the-badge)](#-the-full-project-map)
+[![Projects](https://img.shields.io/badge/Projects-42-8A2BE2?style=for-the-badge)](#-the-full-project-map)
 [![Chains](https://img.shields.io/badge/Chains-A–J-378ADD?style=for-the-badge)](docs/CHAIN_MAP.md)
 [![Languages](https://img.shields.io/badge/Languages-Java%20|%20Python%20|%20Go%20|%20TypeScript%20|%20SQL-0EA5E9?style=for-the-badge)](#-skills-matrix)
 [![Status](https://img.shields.io/badge/Status-In%20Progress-F59E0B?style=for-the-badge)](#-the-full-project-map)
@@ -28,9 +28,9 @@ This is the index repo for a self-built, post-bootcamp engineering challenge: **
   Mastery +Fin-  Stack   ML Pipe- Prod-  & Lang  Tech   & Found- Eng.    -the
          Tech   +Infra   lines   ucts  (scratch)        ations  Deep    Resume
     │       │       │       │       │       │       │       │     Dives    │
-  4 repo  3 repo  4 repo  3 repo  3 repo  2 repo  1 repo  2 repo 11 repo 7 repo
+  4 repo  3 repo  4 repo  5 repo  3 repo  2 repo  1 repo  2 repo 11 repo 7 repo
 
-  Total: 40 project repos + this index repo.
+  Total: 42 project repos + this index repo.
   Code-dependency chains: B (B-1→B-2→B-3), C (C-1→C-2→C-3→C-4).
 ```
 
@@ -82,8 +82,10 @@ It is also a **learning system**: every repo teaches the concepts it uses, so th
 | # | Project | Focus | Status | Repo |
 |---|---------|-------|--------|------|
 | D-1 | ML-Model-Serving-API | Train, evaluate, serve behind FastAPI | ⬜ | [↗](https://github.com/niciahrymer-hillian/ML-Model-Serving-API) |
-| D-2 | Streaming-Data-Pipeline | Real-time ingest + processing | ⬜ | [↗](https://github.com/niciahrymer-hillian/Streaming-Data-Pipeline) |
+| D-2 | Realtime-Event-Pipeline | Kafka → Spark Structured Streaming (windowed agg) | ⬜ | [↗](https://github.com/niciahrymer-hillian/Realtime-Event-Pipeline) |
 | D-3 | Databricks-Medallion-ETL | Bronze→Silver→Gold on Delta Lake | ⬜ | [↗](https://github.com/niciahrymer-hillian/Databricks-Medallion-ETL) |
+| D-4 | Snowflake-dbt-Warehouse | Applied ELT: staging→marts with dbt tests + lineage | ⬜ | [↗](https://github.com/niciahrymer-hillian/Snowflake-dbt-Warehouse) |
+| D-5 | Data-Platform-IaC | Terraform: S3 sink + Kafka + Snowflake objects | ⬜ | [↗](https://github.com/niciahrymer-hillian/Data-Platform-IaC) |
 
 ### Chain E — AI Products
 | # | Project | Focus | Status | Repo |
@@ -136,7 +138,7 @@ It is also a **learning system**: every repo teaches the concepts it uses, so th
 | J-05 | Networking-Basics | ⬜ | [↗](https://github.com/niciahrymer-hillian/Networking-Basics) |
 | J-06 | IaC-Terraform | ⬜ | [↗](https://github.com/niciahrymer-hillian/IaC-Terraform) |
 
-> All ten chains (A–J) are now defined — **40 project repos** in total. Chains D–H were scaffolded from the original roadmap's parked candidate pool. Entrada-Clone is shared between Chain A (Java capstone) and Chain G (PropTech) as a single repo.
+> All ten chains (A–J) are now defined — **42 project repos** in total. Chains D–H were scaffolded from the original roadmap's parked candidate pool. Chain D adds three *applied* data-engineering projects (Realtime-Event-Pipeline, Snowflake-dbt-Warehouse, Data-Platform-IaC) that build real systems with the same tools the Chain I deep dives teach in isolation. Entrada-Clone is shared between Chain A (Java capstone) and Chain G (PropTech) as a single repo.
 
 ## 🧰 Skills Matrix
 
