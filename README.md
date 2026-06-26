@@ -132,8 +132,8 @@ It is also a **learning system**: every repo teaches the concepts it uses, so th
 | # | Project | Status | Repo |
 |---|---------|--------|------|
 | J-01 | DSA-OOP-Fundamentals | ⬜ | [↗](https://github.com/niciahrymer-hillian/DSA-OOP-Fundamentals) |
-| J-02 | Git-Collaboration-Workflow | ⬜ | [↗](https://github.com/niciahrymer-hillian/Git-Collaboration-Workflow) |
-| J-03 | AI-Augmented-Development | ⬜ | [↗](https://github.com/niciahrymer-hillian/AI-Augmented-Development) |
+| J-02 | Git-Collaboration-Workflow | 🟡 | [↗](https://github.com/niciahrymer-hillian/Git-Collaboration-Workflow) |
+| J-03 | AI-Augmented-Development | 🟡 | [↗](https://github.com/niciahrymer-hillian/AI-Augmented-Development) |
 | J-04a | Cloud-Fundamentals-AWS | ⬜ | [↗](https://github.com/niciahrymer-hillian/Cloud-Fundamentals-AWS) |
 | J-04b | Cloud-Fundamentals-Azure | ⬜ | [↗](https://github.com/niciahrymer-hillian/Cloud-Fundamentals-Azure) |
 | J-05 | Networking-Basics | ⬜ | [↗](https://github.com/niciahrymer-hillian/Networking-Basics) |
