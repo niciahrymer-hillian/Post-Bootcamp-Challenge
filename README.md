@@ -60,7 +60,7 @@ It is also a **learning system**: every repo teaches the concepts it uses, so th
 |---|---------|-------|--------|------|
 | A-1 | Farmer-Froilan-Java | Interfaces, multi-inheritance, JUnit | 🟡 | [↗](https://github.com/niciahrymer-hillian/Farmer-Froilan-Java) |
 | A-2 | Farmer-Froilan-Python | ABCs, Protocols, MRO, Java↔Python | 🟡 | [↗](https://github.com/niciahrymer-hillian/Farmer-Froilan-Python) |
-| A-3 | Spring-Boot-REST-API | Spring Boot, JPA, JWT, Swagger | ⬜ | [↗](https://github.com/niciahrymer-hillian/Spring-Boot-REST-API) |
+| A-3 | Spring-Boot-REST-API | Spring Boot, JPA, JWT, Swagger | 🟡 | [↗](https://github.com/niciahrymer-hillian/Spring-Boot-REST-API) |
 | A-4 | Entrada-Clone | Full-stack leasing platform (also Chain G capstone) | ⬜ | [↗](https://github.com/niciahrymer-hillian/Entrada-Clone) |
 
 ### Chain B — Banking + FinTech (code-dependency chain)
