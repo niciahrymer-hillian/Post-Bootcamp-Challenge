@@ -73,10 +73,11 @@ It is also a **learning system**: every repo teaches the concepts it uses, so th
 ### Chain C — Full-Stack + Infrastructure (code-dependency chain)
 | # | Project | Focus | Status | Repo |
 |---|---------|-------|--------|------|
-| C-1 | Full-Stack-Job-Board | FastAPI + React + JWT, deployed | ⬜ | [↗](https://github.com/niciahrymer-hillian/Full-Stack-Job-Board) |
+| C-1 | Full-Stack-Job-Board | FastAPI + React + JWT, deployed | 🟡 | [↗](https://github.com/niciahrymer-hillian/Full-Stack-Job-Board) |
 | C-2 | Dockerized-Microservices | Docker Compose, Nginx, Celery, GHCR | ⬜ | [↗](https://github.com/niciahrymer-hillian/Dockerized-Microservices) |
 | C-3 | Ops-Management-Dashboard | WebSockets, RBAC, real-time UI | ⬜ | [↗](https://github.com/niciahrymer-hillian/Ops-Management-Dashboard) |
 | C-4 | Kubernetes-IaC-Deployment | Terraform + K8s + Helm (from scratch) | ⬜ | [↗](https://github.com/niciahrymer-hillian/Kubernetes-IaC-Deployment) |
+| C-5 | AI-Job-Search-Agent | Scheduled scraper + Claude résumé-match → emailed Excel/PDF | 🟡 | [↗](https://github.com/niciahrymer-hillian/AI-Job-Search-Agent) |
 
 ### Chain D — Data & ML Pipelines
 | # | Project | Focus | Status | Repo |
