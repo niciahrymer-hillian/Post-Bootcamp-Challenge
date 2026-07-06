@@ -1,147 +1,120 @@
-# 🎯 Post-Bootcamp-Challenge
-### A self-directed 30-project engineering portfolio — built like a real team builds, organized into dependency chains.
+# 🎯 Post-Bootcamp Challenge
 
-[![Projects](https://img.shields.io/badge/Projects-42-8A2BE2?style=for-the-badge)](#-the-full-project-map)
-[![Chains](https://img.shields.io/badge/Chains-A–J-378ADD?style=for-the-badge)](docs/CHAIN_MAP.md)
-[![Languages](https://img.shields.io/badge/Languages-Java%20|%20Python%20|%20Go%20|%20TypeScript%20|%20SQL-0EA5E9?style=for-the-badge)](#-skills-matrix)
-[![Status](https://img.shields.io/badge/Status-In%20Progress-F59E0B?style=for-the-badge)](#-the-full-project-map)
+### My self-directed engineering curriculum — the learning journey I built to grow from bootcamp graduate into a well-rounded software, data, and AI engineer.
+
+[![Projects](https://img.shields.io/badge/Projects-43_built_·_more_planned-8A2BE2?style=for-the-badge)](#-the-curriculum)
+[![Chains](https://img.shields.io/badge/Chains-A–T-378ADD?style=for-the-badge)](docs/CHAIN_MAP.md)
+[![Roles](https://img.shields.io/badge/Role_Map-SWE_·_Data_·_FinTech-0EA5E9?style=for-the-badge)](docs/ROLE_MAP.md)
+[![Status](https://img.shields.io/badge/Status-Learning_in_public-F59E0B?style=for-the-badge)](#-the-curriculum)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue?style=for-the-badge)](LICENSE-GPL)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPLv3-blue?style=for-the-badge)](LICENSE-AGPL)
 
-[📖 Learning Plan](docs/LEARNING_PLAN.md) · [🗺️ Chain Map](docs/CHAIN_MAP.md) · [🔗 GitHub Profile](https://github.com/niciahrymer-hillian)
+[📖 Learning Plan](docs/LEARNING_PLAN.md) · [🗺️ Chain Map](docs/CHAIN_MAP.md) · [🎯 Role Map](docs/ROLE_MAP.md) · [🔗 GitHub Profile](https://github.com/niciahrymer-hillian)
 
 ---
 
-## What This Is
+## Why I built this
 
-This is the index repo for a self-built, post-bootcamp engineering challenge: **30 real projects**, each its own GitHub repository, organized into **dependency chains** (A–J). Some chains share code (one project's database literally feeds the next); others share skills (each project assumes you mastered the one before). Every repo ships with a recruiter-facing README, a full bootcamp-style lesson plan, an interactive split-panel tour, skeleton code with `TODO`s to implement, and dual GPL/AGPL licensing.
+When I finished my bootcamp, I knew the pace of my learning shouldn't slow down. I wanted a way to keep growing that was structured, honest, and something I could show — so I designed my own curriculum and built it in public.
 
-```
-                          POST-BOOTCAMP-CHALLENGE
-                          (this index repo)
-                                  │
-    ┌───────────┬───────────┬─────┴─────┬─────────────┬─────────────┐
-    ▼       ▼       ▼       ▼       ▼       ▼       ▼       ▼       ▼       ▼
-  CHAIN   CHAIN   CHAIN   CHAIN   CHAIN   CHAIN   CHAIN   CHAIN   CHAIN   CHAIN
-    A       B       C       D       E       F       G       H       I       J
-  Java   Banking Full-   Data &   AI    Systems Prop-  Business Data    Qualify
-  Mastery +Fin-  Stack   ML Pipe- Prod-  & Lang  Tech   & Found- Eng.    -the
-         Tech   +Infra   lines   ucts  (scratch)        ations  Deep    Resume
-    │       │       │       │       │       │       │       │     Dives    │
-  4 repo  3 repo  4 repo  5 repo  3 repo  2 repo  1 repo  2 repo 11 repo 7 repo
+This is that curriculum. It's organized into **dependency chains** (A–T): each chain is a theme, and the projects inside it build on one another. Some chains share code (one project's database literally feeds the next); others share skills (each project assumes I've learned the one before). I add a chain when there's a subject I want to genuinely understand, not just list on a résumé.
 
-  Total: 42 project repos + this index repo.
-  Code-dependency chains: B (B-1→B-2→B-3), C (C-1→C-2→C-3→C-4).
-```
+I learn best by building and by teaching, so every project is set up to do both.
 
-<!-- SCREENSHOT PLACEHOLDER:
-     docs/screenshots/profile-grid.png  — GitHub profile showing the repo grid
-     docs/screenshots/chain-map.png     — rendered chain dependency map
--->
+## What every project includes
 
-## 🧭 Why This Was Built
+Each project is its own repository, and every one ships with the same learning scaffolding:
 
-Recruiters and engineers don't hire on topic — they hire on **how you write and document code**. This portfolio is engineered to show exactly that:
+- **A lesson plan** — what I set out to learn, the concepts behind it, and a step-by-step build order.
+- **An interactive tour** — a split-panel, in-browser walkthrough where I can run real code (Python, SQL, Java) or work through concepts, plus a **"Check Your Understanding" quiz** to test myself.
+- **A "Why This Matters" note** — why I added this to my curriculum and how the skill applies to the work I want to do.
+- **Skeleton code with `TODO`s** — so the project is something I actively build, not just read.
+- **Dual GPL / AGPL licensing** so the work is open.
 
-- **Substantial full-stack apps** with real databases, auth, and deployed APIs (Chains A, C).
-- **Recreated technologies from scratch** — an HTTP server, a custom language interpreter, IaC from the ground up — to prove deep technical understanding (Chain J, scratch projects).
-- **Data & ML pipelines** that train, evaluate, and serve — not just notebooks (Chains B, I).
-- **Infrastructure & automation** — Docker, Kubernetes, Terraform, CI/CD (Chains C, J).
-- **Domain advantage** — real estate / occupancy / leasing expertise baked into the data models (Entrada Clone), a moat most engineers can't replicate.
+## 🧭 The curriculum
 
-It is also a **learning system**: every repo teaches the concepts it uses, so the portfolio doubles as a curriculum I can revisit and others can learn from.
+I think about the chains in five groups — roughly the order I'm growing through them.
 
-## 🗺️ The Full Project Map
+### Foundations — getting the fundamentals clean
+> *Why I'm learning this: before anything advanced, I want disciplined habits — clean code, tests, git, the shape of a computer, and just-enough of every core topic.*
 
-> Status legend: ✅ complete · 🟡 in progress · ⬜ scaffolded · 🔒 reserved
+- **Chain H — Business & Foundations** · a well-tested CLI + a CRM, to get structure and testing right.
+- **Chain J — Just Enough to Qualify** · DSA, git workflow, cloud, networking, IaC, AI-augmented development — the baseline every role expects.
+- **Chain F — Systems & Languages, From Scratch** · an HTTP server and a language interpreter, because I understand a thing best when I've rebuilt it.
+- **Chain K — Hardware & Systems Foundations** *(planned)* · Linux on old hardware, circuits, Raspberry Pi, firewalls and home networking — understanding the machine from the metal up.
+
+### Core engineering — building and shipping real software
+> *Why I'm learning this: I want to take an idea all the way to a deployed, maintainable application.*
+
+- **Chain A — Java Mastery** · OOP and interfaces through to a full Spring Boot app.
+- **Chain C — Full-Stack + Infrastructure** · FastAPI + React apps, Docker, Kubernetes, and a scheduled AI job-search agent.
+- **Chain O — System Design & Architecture** *(planned)* · designing for scale — the reasoning behind large systems.
+
+### Data — the center of gravity
+> *Why I'm learning this: data engineering is where I most want to work, so I'm going both wide and deep.*
+
+- **Chain B — Banking + FinTech** · an end-to-end pipeline: scrape → validate → transform → load → serve, with fraud signals.
+- **Chain D — Data & ML Pipelines** *(planned)* · applied streaming, medallion ETL, warehousing, and data-platform IaC.
+- **Chain I — Data Engineering Deep Dives** *(planned)* · focused study of the exact tools data teams use (SQL, dbt, Snowflake, Spark, Kafka, Airflow, and more).
+- **Chain Q — Data Analytics** *(planned)* · SQL for analysis, spreadsheets, EDA, BI dashboards, and telling a clear story with data.
+- **Chain R — Data Science & Statistics** *(planned)* · the statistics and modeling foundation, ending in a predictive project.
+- **Chain P — MLOps & Applied ML** *(planned)* · taking models to production — tracking, registries, monitoring, and serving.
+
+### AI — understanding and building with modern models
+> *Why I'm learning this: I want to use AI well and understand what's actually happening underneath.*
+
+- **Chain E — AI Products** · a tool-using agent, a TTS note-taker, and a social-media manager.
+- **Chain M — Prompt AI & LLMs** *(planned)* · how LLMs work, building a tiny one from scratch, and prompting for personal vs. professional use.
+
+### Specializations & role prep — turning learning into opportunities
+> *Why I'm learning this: I want my domain background and my target roles to show up clearly in the work.*
+
+- **Chain G — PropTech** · Leasing-Agent-App and the **Entrada-Clone** leasing platform — bringing my real-estate/leasing background into software.
+- **Chain N — PropTech & Real-Estate Engineering** *(planned)* · valuation models, geospatial analytics, and occupancy dashboards.
+- **Chain S — FinTech Engineering** *(planned)* · payments, double-entry ledgers, market data, and risk.
+- **Chain L — Cybersecurity** *(planned)* · recognizing and defending against threats — taught entirely through **safe, simulated** scenarios (no real malware).
+- **Chain T — Interview Prep** *(planned)* · turning all of the above into offers, mapped role-by-role in the [Role Map](docs/ROLE_MAP.md).
+
+## 🗺️ The full project map (built so far)
+
+> Status: ✅ complete · 🟡 in progress · ⬜ scaffolded
 
 ### Chain A — Java Mastery
-| # | Project | Focus | Status | Repo |
-|---|---------|-------|--------|------|
-| A-1 | Farmer-Froilan-Java | Interfaces, multi-inheritance, JUnit | 🟡 | [↗](https://github.com/niciahrymer-hillian/Farmer-Froilan-Java) |
-| A-2 | Farmer-Froilan-Python | ABCs, Protocols, MRO, Java↔Python | 🟡 | [↗](https://github.com/niciahrymer-hillian/Farmer-Froilan-Python) |
+| # | Project | What I'm learning | Status | Repo |
+|---|---------|-------------------|--------|------|
+| A-1 | Farmer-Froilan-Java | Interfaces, multiple contracts, JUnit | 🟡 | [↗](https://github.com/niciahrymer-hillian/Farmer-Froilan-Java) |
+| A-2 | Farmer-Froilan-Python | ABCs, Protocols, MRO; Java↔Python | 🟡 | [↗](https://github.com/niciahrymer-hillian/Farmer-Froilan-Python) |
 | A-3 | Spring-Boot-REST-API | Spring Boot, JPA, JWT, Swagger | 🟡 | [↗](https://github.com/niciahrymer-hillian/Spring-Boot-REST-API) |
-| A-4 | Entrada-Clone | Full-stack leasing platform (also Chain G capstone) | ⬜ | [↗](https://github.com/niciahrymer-hillian/Entrada-Clone) |
+| A-4 | Real-Time-Chat-Service | Spring WebSocket/STOMP, rooms, presence, history (Java capstone) | ⬜ | [↗](https://github.com/niciahrymer-hillian/Real-Time-Chat-Service) |
 
-### Chain B — Banking + FinTech (code-dependency chain)
-| # | Project | Focus | Status | Repo |
-|---|---------|-------|--------|------|
-| B-1 | Web-Scraper-Postgres-Pipeline | ETL, Pydantic, idempotency, CI cron | 🟡 | [↗](https://github.com/niciahrymer-hillian/Web-Scraper-Postgres-Pipeline) |
-| B-2 | Banking-Data-Platform | Polars, dbt medallion, IsolationForest | 🟡 | [↗](https://github.com/niciahrymer-hillian/Banking-Data-Platform) |
-| B-3 | Banking-Interface-Fraud-UI | Spring Boot + React, reads B-2 Gold tables | 🟡 | [↗](https://github.com/niciahrymer-hillian/Banking-Interface-Fraud-UI) |
+### Chain B — Banking + FinTech ✅ *(tours complete)*
+| # | Project | What I'm learning | Status | Repo |
+|---|---------|-------------------|--------|------|
+| B-1 | Web-Scraper-Postgres-Pipeline | ETL, Pydantic, idempotency, scheduled CI | 🟡 | [↗](https://github.com/niciahrymer-hillian/Web-Scraper-Postgres-Pipeline) |
+| B-2 | Banking-Data-Platform | Polars, dbt medallion, window-function fraud signals | 🟡 | [↗](https://github.com/niciahrymer-hillian/Banking-Data-Platform) |
+| B-3 | Banking-Interface-Fraud-UI | Spring Boot + React reading B-2's Gold tables | 🟡 | [↗](https://github.com/niciahrymer-hillian/Banking-Interface-Fraud-UI) |
 
-### Chain C — Full-Stack + Infrastructure (code-dependency chain)
-| # | Project | Focus | Status | Repo |
-|---|---------|-------|--------|------|
+### Chain C — Full-Stack + Infrastructure
+| # | Project | What I'm learning | Status | Repo |
+|---|---------|-------------------|--------|------|
 | C-1 | Full-Stack-Job-Board | FastAPI + React + JWT, deployed | 🟡 | [↗](https://github.com/niciahrymer-hillian/Full-Stack-Job-Board) |
 | C-2 | Dockerized-Microservices | Docker Compose, Nginx, Celery, GHCR | ⬜ | [↗](https://github.com/niciahrymer-hillian/Dockerized-Microservices) |
 | C-3 | Ops-Management-Dashboard | WebSockets, RBAC, real-time UI | ⬜ | [↗](https://github.com/niciahrymer-hillian/Ops-Management-Dashboard) |
-| C-4 | Kubernetes-IaC-Deployment | Terraform + K8s + Helm (from scratch) | ⬜ | [↗](https://github.com/niciahrymer-hillian/Kubernetes-IaC-Deployment) |
-| C-5 | AI-Job-Search-Agent | Scheduled scraper + Claude résumé-match → emailed Excel/PDF | 🟡 | [↗](https://github.com/niciahrymer-hillian/AI-Job-Search-Agent) |
+| C-4 | Kubernetes-IaC-Deployment | Terraform + K8s + Helm | ⬜ | [↗](https://github.com/niciahrymer-hillian/Kubernetes-IaC-Deployment) |
+| C-5 | AI-Job-Search-Agent | Scheduled scraper + Claude résumé-match → emailed report | 🟡 | [↗](https://github.com/niciahrymer-hillian/AI-Job-Search-Agent) |
+| C-6 | E-Commerce-Order-Backend | Catalog, cart, inventory, order state machine, payments (Java) | ⬜ | [↗](https://github.com/niciahrymer-hillian/E-Commerce-Order-Backend) |
 
-### Chain D — Data & ML Pipelines
-| # | Project | Focus | Status | Repo |
-|---|---------|-------|--------|------|
-| D-1 | ML-Model-Serving-API | Train, evaluate, serve behind FastAPI | ⬜ | [↗](https://github.com/niciahrymer-hillian/ML-Model-Serving-API) |
-| D-2 | Realtime-Event-Pipeline | Kafka → Spark Structured Streaming (windowed agg) | ⬜ | [↗](https://github.com/niciahrymer-hillian/Realtime-Event-Pipeline) |
-| D-3 | Databricks-Medallion-ETL | Bronze→Silver→Gold on Delta Lake | ⬜ | [↗](https://github.com/niciahrymer-hillian/Databricks-Medallion-ETL) |
-| D-4 | Snowflake-dbt-Warehouse | Applied ELT: staging→marts with dbt tests + lineage | ⬜ | [↗](https://github.com/niciahrymer-hillian/Snowflake-dbt-Warehouse) |
-| D-5 | Data-Platform-IaC | Terraform: S3 sink + Kafka + Snowflake objects | ⬜ | [↗](https://github.com/niciahrymer-hillian/Data-Platform-IaC) |
+### Chains D–J
+The remaining built chains — **D** (Data & ML Pipelines), **E** (AI Products), **F** (Systems from Scratch), **G** (PropTech), **H** (Business & Foundations), **I** (Data-Engineering Deep Dives), and **J** (Foundations / Qualify) — are scaffolded and being filled in project by project. See [CHAIN_MAP.md](docs/CHAIN_MAP.md) for the full list, and each repo for its lesson plan and interactive tour.
 
-### Chain E — AI Products
-| # | Project | Focus | Status | Repo |
-|---|---------|-------|--------|------|
-| E-1 | AI-TTS-Notes | Natural-voice TTS + note-taking | ⬜ | [↗](https://github.com/niciahrymer-hillian/AI-TTS-Notes) |
-| E-2 | AI-Social-Media-Manager | Schedule/auto-post, notifications, analytics | ⬜ | [↗](https://github.com/niciahrymer-hillian/AI-Social-Media-Manager) |
-| E-3 | AI-Agent-Assistant | Tool-using agent with memory | ⬜ | [↗](https://github.com/niciahrymer-hillian/AI-Agent-Assistant) |
+### Chains K–T *(planned)*
+Hardware, Cybersecurity, LLMs, PropTech engineering, System Design, MLOps, Data Analytics, Data Science, FinTech, and Interview Prep — designed and queued. The [Role Map](docs/ROLE_MAP.md) shows how they line up against the roles I'm working toward.
 
-### Chain F — Systems & Languages (from scratch)
-| # | Project | Focus | Status | Repo |
-|---|---------|-------|--------|------|
-| F-1 | HTTP-Server-From-Scratch | Raw sockets → Go core loop | ⬜ | [↗](https://github.com/niciahrymer-hillian/HTTP-Server-From-Scratch) |
-| F-2 | Custom-Language-Interpreter | Lexer, parser, AST, REPL | ⬜ | [↗](https://github.com/niciahrymer-hillian/Custom-Language-Interpreter) |
+## 🎯 Built with real roles in mind
 
-### Chain G — PropTech
-| # | Project | Focus | Status | Repo |
-|---|---------|-------|--------|------|
-| G-1 | Leasing-Agent-App | Renter↔apartment matching (HomeMatch-style) | ⬜ | [↗](https://github.com/niciahrymer-hillian/Leasing-Agent-App) |
-| G-2 | Entrada-Clone | Full leasing/occupancy platform (shared with Chain A) | ⬜ | [↗](https://github.com/niciahrymer-hillian/Entrada-Clone) |
+I keep a [Role Map](docs/ROLE_MAP.md) that connects each chain to the roles I'm preparing for — **Software Engineer, Data Engineer, Data Analyst, Data Scientist, and FinTech** — with the projects that demonstrate each skill and a study path for interviews. It keeps the curriculum honest: every chain earns its place by moving me toward work I actually want.
 
-### Chain H — Business & Foundations
-| # | Project | Focus | Status | Repo |
-|---|---------|-------|--------|------|
-| H-1 | CLI-Task-Manager | Foundations: clean Python + SQLite CLI | ⬜ | [↗](https://github.com/niciahrymer-hillian/CLI-Task-Manager) |
-| H-2 | BD-Marketing-CRM | BD + marketing CRM with AI email drafts | ⬜ | [↗](https://github.com/niciahrymer-hillian/BD-Marketing-CRM) |
-
-### Chain I — Data Engineering Deep Dives (skill chain)
-| # | Project | Status | Repo |
-|---|---------|--------|------|
-| I-01 | SQL-Deep-Dive | ⬜ | [↗](https://github.com/niciahrymer-hillian/SQL-Deep-Dive) |
-| I-02 | ETL-ELT-Deep-Dive | ⬜ | [↗](https://github.com/niciahrymer-hillian/ETL-ELT-Deep-Dive) |
-| I-03 | DBT-Deep-Dive | ⬜ | [↗](https://github.com/niciahrymer-hillian/DBT-Deep-Dive) |
-| I-04 | Snowflake-Deep-Dive | ⬜ | [↗](https://github.com/niciahrymer-hillian/Snowflake-Deep-Dive) |
-| I-05 | Azure-Data-Stack | ⬜ | [↗](https://github.com/niciahrymer-hillian/Azure-Data-Stack) |
-| I-06 | Apache-Spark | ⬜ | [↗](https://github.com/niciahrymer-hillian/Apache-Spark) |
-| I-07 | Apache-Kafka | ⬜ | [↗](https://github.com/niciahrymer-hillian/Apache-Kafka) |
-| I-08 | Apache-Airflow | ⬜ | [↗](https://github.com/niciahrymer-hillian/Apache-Airflow) |
-| I-09 | Teradata-Intro | ⬜ | [↗](https://github.com/niciahrymer-hillian/Teradata-Intro) |
-| I-10 | Tableau-BI-Dashboards | ⬜ | [↗](https://github.com/niciahrymer-hillian/Tableau-BI-Dashboards) |
-| I-11 | Django-Flask-Review | ⬜ | [↗](https://github.com/niciahrymer-hillian/Django-Flask-Review) |
-
-### Chain J — Just Enough to Qualify (skill + mini-projects)
-| # | Project | Status | Repo |
-|---|---------|--------|------|
-| J-01 | DSA-OOP-Fundamentals | ⬜ | [↗](https://github.com/niciahrymer-hillian/DSA-OOP-Fundamentals) |
-| J-02 | Git-Collaboration-Workflow | 🟡 | [↗](https://github.com/niciahrymer-hillian/Git-Collaboration-Workflow) |
-| J-03 | AI-Augmented-Development | 🟡 | [↗](https://github.com/niciahrymer-hillian/AI-Augmented-Development) |
-| J-04a | Cloud-Fundamentals-AWS | ⬜ | [↗](https://github.com/niciahrymer-hillian/Cloud-Fundamentals-AWS) |
-| J-04b | Cloud-Fundamentals-Azure | ⬜ | [↗](https://github.com/niciahrymer-hillian/Cloud-Fundamentals-Azure) |
-| J-05 | Networking-Basics | ⬜ | [↗](https://github.com/niciahrymer-hillian/Networking-Basics) |
-| J-06 | IaC-Terraform | ⬜ | [↗](https://github.com/niciahrymer-hillian/IaC-Terraform) |
-
-> All ten chains (A–J) are now defined — **42 project repos** in total. Chains D–H were scaffolded from the original roadmap's parked candidate pool. Chain D adds three *applied* data-engineering projects (Realtime-Event-Pipeline, Snowflake-dbt-Warehouse, Data-Platform-IaC) that build real systems with the same tools the Chain I deep dives teach in isolation. Entrada-Clone is shared between Chain A (Java capstone) and Chain G (PropTech) as a single repo.
-
-## 🧰 Skills Matrix
+## 🧰 Skills this curriculum covers
 
 | Category | Covered by |
 |----------|-----------|
@@ -150,14 +123,15 @@ It is also a **learning system**: every repo teaches the concepts it uses, so th
 | **Databases** | PostgreSQL, SQLite, Snowflake, Teradata, Delta Lake |
 | **Infrastructure** | Docker, Kubernetes, Helm, Terraform, AWS, Azure, Nginx |
 | **Data Tools** | dbt, Polars, Apache Spark, Kafka, Airflow, Tableau |
-| **Practices** | TDD, CI/CD, Git Flow, conventional commits, RBAC, WCAG 2.1 AA, IaC |
+| **AI** | LLM prompting, agents, RAG, model serving |
+| **Practices** | TDD, CI/CD, git workflow, RBAC, WCAG 2.1 AA, IaC, defensive security |
 
-## 🚀 How to Use This Portfolio
+## 🚀 How to explore this portfolio
 
 ```bash
 # Each project is its own repo. Clone any one to start:
-git clone https://github.com/niciahrymer-hillian/Farmer-Froilan-Java.git
-cd Farmer-Froilan-Java
+git clone https://github.com/niciahrymer-hillian/Banking-Data-Platform.git
+cd Banking-Data-Platform
 
 # Read the lesson plan, then open the interactive tour in a browser:
 open docs/interactive/index.html     # macOS  (xdg-open on Linux)
@@ -168,5 +142,7 @@ open docs/interactive/index.html     # macOS  (xdg-open on Linux)
 Each repo's interactive tour is also served free via **GitHub Pages** from its `docs/` folder.
 
 ---
+
+*Learning in public, one chain at a time.* — [niciahrymer-hillian](https://github.com/niciahrymer-hillian)
 
 Dual licensed — [GPL v3](LICENSE-GPL) and [AGPL v3](LICENSE-AGPL).

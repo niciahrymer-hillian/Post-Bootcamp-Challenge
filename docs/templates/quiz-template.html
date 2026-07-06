@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  ============================================================================
+  REUSABLE "CHECK YOUR UNDERSTANDING" QUIZ COMPONENT   (Portfolio Standard #7)
+  ============================================================================
+  Two ways to use this file:
+
+  (A) STANDALONE  — open it directly (or link it from a README) as a per-project
+      quiz. Just replace the THEME variables and the QUIZ array below.
+
+  (B) EMBED AS A 5th TAB in docs/interactive/index.html — the preferred pattern:
+      1. Add a pill: LESSONS-style tours build pills from an array; append one more
+         pill labelled "✓ Quiz" whose click handler calls showQuiz().
+      2. Copy the .quiz CSS, the QUIZ array, and the quiz functions (renderQuiz,
+         pickQuiz, nextQuiz, restartQuiz) into the tour's <script>.
+      3. showQuiz() hides the lesson/practice panels and shows a #quiz container.
+      Keep the tour's existing --bg/--accent theme variables — this component
+      inherits them, so it matches each chain's colors automatically.
+
+  DESIGN: 5–8 questions, one at a time, immediate right/wrong feedback + a
+  one-line explanation, running score, final score screen with retake.
+  Questions must test the lesson's ideas — not trivia.
+  ============================================================================
+-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check Your Understanding — Quiz Template</title>
+<style>
+  /* ---- THEME: override these two per chain (defaults shown) ---- */
+  :root{--bg:#141414;--accent:#8A2BE2;--text:#EDEDED;--muted:#9a9a9a;--panel:#ffffff0a;--ok:#2EA56B;--bad:#C2453E;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text)}
+  .quiz{max-width:720px;margin:0 auto;padding:32px 24px}
+  .quiz h2{margin:0 0 4px;color:var(--accent)}
+  .quiz .sub{color:var(--muted);font-size:13px;margin-bottom:20px}
+  .quiz .progress{height:6px;background:#ffffff14;border-radius:999px;overflow:hidden;margin-bottom:20px}
+  .quiz .progress > div{height:100%;background:var(--accent);width:0;transition:width .25s}
+  .quiz .qtext{font-size:17px;font-weight:600;margin:6px 0 16px}
+  .quiz .opt{display:block;width:100%;text-align:left;background:var(--panel);color:var(--text);border:1px solid #ffffff1f;border-radius:10px;padding:13px 15px;margin:9px 0;cursor:pointer;font-size:15px}
+  .quiz .opt:hover:not(:disabled){border-color:var(--accent)}
+  .quiz .opt.ok{border-color:var(--ok);background:#2ea56b22}
+  .quiz .opt.bad{border-color:var(--bad);background:#c2453e22}
+  .quiz .opt:disabled{cursor:default}
+  .quiz .explain{display:none;margin-top:14px;padding:14px;border-left:3px solid var(--accent);background:#ffffff0d;border-radius:4px;font-size:14px;line-height:1.55}
+  .quiz .row{display:flex;justify-content:space-between;align-items:center;margin-top:20px}
+  .quiz .score{color:var(--muted);font-size:13px}
+  .quiz button.nav{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:10px 18px;font-weight:600;cursor:pointer}
+  .quiz button.nav:disabled{opacity:.4;cursor:not-allowed}
+  .quiz .final{text-align:center;padding:20px 0}
+  .quiz .final .big{font-size:40px;font-weight:800;color:var(--accent)}
+  .quiz .final button{background:transparent;color:var(--accent);border:1px solid var(--accent);border-radius:8px;padding:10px 18px;font-weight:600;cursor:pointer;margin-top:16px}
+</style>
+</head>
+<body>
+<div class="quiz">
+  <h2>Check Your Understanding</h2>
+  <div class="sub" id="qsub">Answer each question — you'll get instant feedback and a short explanation.</div>
+  <div class="progress"><div id="qbar"></div></div>
+  <div id="qbody"></div>
+</div>
+
+<script>
+/* ---- EDIT THIS ARRAY PER PROJECT (5–8 questions). `ok:true` marks the correct option. ---- */
+const QUIZ = [
+  {
+    q:"Example: What is the single most important property of a scheduled data pipeline?",
+    options:[
+      {t:"It runs as fast as possible.", ok:false},
+      {t:"It is idempotent — re-running produces the same result, no duplicates.", ok:true},
+      {t:"It uses the newest library versions.", ok:false}
+    ],
+    explain:"Idempotency is what makes a pipeline safe to re-run after a failure or on overlapping data."
+  },
+  {
+    q:"Example: Why validate data before loading it into the database?",
+    options:[
+      {t:"To make the database file smaller.", ok:false},
+      {t:"To reject dirty/malformed rows before they corrupt downstream tables.", ok:true},
+      {t:"Validation is optional and mainly cosmetic.", ok:false}
+    ],
+    explain:"A validation model defines the shape you require; bad rows are dropped at the door."
+  }
+  // ... add 3–6 more, one idea per question, drawn from this project's lessons.
+];
+
+let qi = 0, score = 0, answered = false;
+const el = id => document.getElementById(id);
+
+function renderQuiz(){
+  answered = false;
+  const item = QUIZ[qi];
+  el('qbar').style.width = (qi / QUIZ.length * 100) + '%';
+  let html = '<div class="qtext">'+ (qi+1) +'. '+ item.q +'</div><div id="qopts"></div>' +
+             '<div class="explain" id="qexplain">'+ item.explain +'</div>' +
+             '<div class="row"><span class="score" id="qscore">Score: '+score+' / '+QUIZ.length+'</span>' +
+             '<button class="nav" id="qnext" disabled onclick="nextQuiz()">'+
+             (qi === QUIZ.length-1 ? 'See score →' : 'Next →') +'</button></div>';
+  el('qbody').innerHTML = html;
+  const opts = el('qopts');
+  item.options.forEach((o,idx)=>{
+    const b = document.createElement('button');
+    b.className = 'opt'; b.textContent = o.t;
+    b.onclick = (e)=>pickQuiz(idx, e.currentTarget);
+    opts.appendChild(b);
+  });
+}
+function pickQuiz(idx, clicked){
+  if(answered) return;
+  answered = true;
+  const item = QUIZ[qi];
+  const btns = el('qopts').querySelectorAll('.opt');
+  btns.forEach((b,i)=>{ b.disabled = true; if(item.options[i].ok) b.classList.add('ok'); });
+  if(item.options[idx].ok){ score++; el('qscore').textContent = 'Score: '+score+' / '+QUIZ.length; }
+  else { clicked.classList.add('bad'); }
+  el('qexplain').style.display = 'block';
+  el('qnext').disabled = false;
+}
+function nextQuiz(){
+  qi++;
+  if(qi < QUIZ.length){ renderQuiz(); }
+  else { finishQuiz(); }
+}
+function finishQuiz(){
+  el('qbar').style.width = '100%';
+  const pct = Math.round(score / QUIZ.length * 100);
+  const msg = pct === 100 ? 'Perfect — you’ve got this.' :
+              pct >= 70  ? 'Solid understanding.' :
+              pct >= 40  ? 'Good start — revisit the lessons you missed.' :
+                           'Worth another pass through the lessons.';
+  el('qbody').innerHTML =
+    '<div class="final"><div class="big">'+score+' / '+QUIZ.length+'</div>'+
+    '<p>'+msg+' ('+pct+'%)</p>'+
+    '<button onclick="restartQuiz()">↺ Retake quiz</button></div>';
+}
+function restartQuiz(){ qi = 0; score = 0; renderQuiz(); }
+
+renderQuiz();
+</script>
+</body>
+</html>
