@@ -2,7 +2,7 @@
 
 ### My self-directed engineering curriculum — the learning journey I built to grow from bootcamp graduate into a well-rounded software, data, and AI engineer.
 
-[![Projects](https://img.shields.io/badge/Projects-43_built_·_more_planned-8A2BE2?style=for-the-badge)](#-the-curriculum)
+[![Projects](https://img.shields.io/badge/Projects-104_across_20_chains-8A2BE2?style=for-the-badge)](#-the-curriculum)
 [![Chains](https://img.shields.io/badge/Chains-A–T-378ADD?style=for-the-badge)](docs/CHAIN_MAP.md)
 [![Roles](https://img.shields.io/badge/Role_Map-SWE_·_Data_·_FinTech-0EA5E9?style=for-the-badge)](docs/ROLE_MAP.md)
 [![Status](https://img.shields.io/badge/Status-Learning_in_public-F59E0B?style=for-the-badge)](#-the-curriculum)
@@ -41,7 +41,7 @@ I think about the chains in five groups — roughly the order I'm growing throug
 - **Chain H — Business & Foundations** · a well-tested CLI + a CRM, to get structure and testing right.
 - **Chain J — Just Enough to Qualify** · DSA, git workflow, cloud, networking, IaC, AI-augmented development — the baseline every role expects.
 - **Chain F — Systems & Languages, From Scratch** · an HTTP server and a language interpreter, because I understand a thing best when I've rebuilt it.
-- **Chain K — Hardware & Systems Foundations** *(planned)* · Linux on old hardware, circuits, Raspberry Pi, firewalls and home networking — understanding the machine from the metal up.
+- **Chain K — Hardware & Systems Foundations** *(planned)* · Linux on old hardware, circuits, Raspberry Pi, firewalls and home networking, a **cyberdeck** build (with cellular calling/SMS + music) and a **VPN simulator** — understanding the machine from the metal up.
 
 ### Core engineering — building and shipping real software
 > *Why I'm learning this: I want to take an idea all the way to a deployed, maintainable application.*
