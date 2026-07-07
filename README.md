@@ -2,7 +2,7 @@
 
 ### My self-directed engineering curriculum — the learning journey I built to grow from bootcamp graduate into a well-rounded software, data, and AI engineer.
 
-[![Projects](https://img.shields.io/badge/Projects-104_across_20_chains-8A2BE2?style=for-the-badge)](#-the-curriculum)
+[![Projects](https://img.shields.io/badge/Projects-106_across_20_chains-8A2BE2?style=for-the-badge)](#-the-curriculum)
 [![Chains](https://img.shields.io/badge/Chains-A–T-378ADD?style=for-the-badge)](docs/CHAIN_MAP.md)
 [![Roles](https://img.shields.io/badge/Role_Map-SWE_·_Data_·_FinTech-0EA5E9?style=for-the-badge)](docs/ROLE_MAP.md)
 [![Status](https://img.shields.io/badge/Status-Learning_in_public-F59E0B?style=for-the-badge)](#-the-curriculum)
@@ -64,7 +64,7 @@ I think about the chains in five groups — roughly the order I'm growing throug
 > *Why I'm learning this: I want to use AI well and understand what's actually happening underneath.*
 
 - **Chain E — AI Products** · a tool-using agent, a TTS note-taker, and a social-media manager.
-- **Chain M — Prompt AI & LLMs** *(planned)* · how LLMs work, building a tiny one from scratch, and prompting for personal vs. professional use.
+- **Chain M — Prompt AI & LLMs** *(planned)* · how LLMs work, building a tiny one from scratch, prompting for personal vs. professional use, a **non-invasive AI code reviewer**, and a **multi-agent dev system** whose agents build and test each other concurrently.
 
 ### Specializations & role prep — turning learning into opportunities
 > *Why I'm learning this: I want my domain background and my target roles to show up clearly in the work.*
