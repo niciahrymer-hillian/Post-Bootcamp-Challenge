@@ -69,7 +69,13 @@ I think about the chains in five groups — roughly the order I'm growing throug
 ### Specializations & role prep — turning learning into opportunities
 > *Why I'm learning this: I want my domain background and my target roles to show up clearly in the work.*
 
-- **Chain G — PropTech** · Leasing-Agent-App and the **Entrada-Clone** leasing platform — bringing my real-estate/leasing background into software.
+- **Chain G — PropTech** · the **Centric** property-management platform, the **HomeMatch** rental marketplace, and the **Leasing-Agent** add-on — bringing my real-estate/leasing background into software.
+
+> **Commercial products (proprietary — not open source).** Three of these are being taken to production for sale under a forming LLC, so their source is private and All-Rights-Reserved:
+> - **HomeMatch** — renter marketplace + landlord leads engine · **v2 shipped ✅**
+> - **Centric** (formerly Entrada) — landlord/PM operations console (smart metrics + agentic-AI workflows) · **MVP shipped ✅**
+> - **Leasing-Agent** — applicant-sourcing add-on that plugs into Centric · **integrated ✅**
+
 - **Chain N — PropTech & Real-Estate Engineering** *(planned)* · valuation models, geospatial analytics, and occupancy dashboards.
 - **Chain S — FinTech Engineering** *(planned)* · payments, double-entry ledgers, market data, and risk.
 - **Chain L — Cybersecurity** *(planned)* · recognizing and defending against threats — taught entirely through **safe, simulated** scenarios (no real malware).
