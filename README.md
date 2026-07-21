@@ -72,9 +72,11 @@ I think about the chains in five groups — roughly the order I'm growing throug
 - **Chain G — PropTech** · the **Centric** property-management platform, the **HomeMatch** rental marketplace, and the **Leasing-Agent** add-on — bringing my real-estate/leasing background into software.
 
 > **Commercial products (proprietary — not open source).** Three of these are being taken to production for sale under a forming LLC, so their source is private and All-Rights-Reserved:
-> - **HomeMatch** — renter marketplace + landlord leads engine · **v2 shipped ✅**
-> - **Centric** (formerly Entrada) — landlord/PM operations console (smart metrics + agentic-AI workflows) · **MVP shipped ✅**
-> - **Leasing-Agent** — applicant-sourcing add-on that plugs into Centric · **integrated ✅**
+> - **HomeMatch** — eligibility-first renter marketplace + landlord leads engine · **shipped ✅**
+> - **Centric** (formerly Entrada) — multi-tenant landlord/PM operations console: accounting, screening, and agentic AI (**Miranda**) including after-hours dispatch · **shipped ✅**
+> - **Keyholders** (formerly Leasing-Agent) — freelance leasing-agent staffing marketplace + field ops (GPS time-clock, on-call, technician PWA) that plugs into Centric · **shipped ✅**
+>
+> The three deploy together as one system (one origin, three landing pages) and live in the private **Centric** repo.
 
 - **Chain N — PropTech & Real-Estate Engineering** *(planned)* · valuation models, geospatial analytics, and occupancy dashboards.
 - **Chain S — FinTech Engineering** *(planned)* · payments, double-entry ledgers, market data, and risk.
