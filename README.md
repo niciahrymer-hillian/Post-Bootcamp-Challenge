@@ -38,7 +38,7 @@ I think about the chains in five groups — roughly the order I'm growing throug
 ### Foundations — getting the fundamentals clean
 > *Why I'm learning this: before anything advanced, I want disciplined habits — clean code, tests, git, the shape of a computer, and just-enough of every core topic.*
 
-- **Chain H — Business & Foundations** · a well-tested CLI + a CRM, to get structure and testing right.
+- **Chain H — Business & Foundations** · a well-tested CLI + a CRM, plus **Agile delivery** — playable **Scrum** and **Jira** lessons (sprint simulator, burndown, live JQL) — to get structure, testing, and *how teams ship* right.
 - **Chain J — Just Enough to Qualify** · DSA, git workflow, cloud, networking, IaC, AI-augmented development — the baseline every role expects.
 - **Chain F — Systems & Languages, From Scratch** · an HTTP server and a language interpreter, because I understand a thing best when I've rebuilt it.
 - **Chain K — Hardware & Systems Foundations** *(planned)* · Linux on old hardware, circuits, Raspberry Pi, firewalls and home networking, a **cyberdeck** build (with cellular calling/SMS + music) and a **VPN simulator** — understanding the machine from the metal up.
