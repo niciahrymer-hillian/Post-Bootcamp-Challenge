@@ -56,15 +56,15 @@ I think about the chains in five groups — roughly the order I'm growing throug
 - **Chain B — Banking + FinTech** · an end-to-end pipeline: scrape → validate → transform → load → serve, with fraud signals.
 - **Chain D — Data & ML Pipelines** *(planned)* · applied streaming, medallion ETL, warehousing, and data-platform IaC.
 - **Chain I — Data Engineering Deep Dives** *(planned)* · focused study of the exact tools data teams use (SQL, dbt, Snowflake, Spark, Kafka, Airflow, and more).
-- **Chain Q — Data Analytics** *(planned)* · SQL for analysis, spreadsheets, EDA, BI dashboards, and telling a clear story with data.
-- **Chain R — Data Science & Statistics** *(planned)* · the statistics and modeling foundation, ending in a predictive project.
+- **Chain Q — Data Analytics** · deeper SQL, EDA + data cleaning, BI dashboards & data viz, and telling a clear story — several with **built interactive tours** (a live SQL query builder, a chart builder, a dirty-dataset cleaner) + Jupyter exercises.
+- **Chain R — Data Science & Statistics** · the statistics and modeling foundation, ending in a **predictive capstone** with a live threshold/confusion-matrix evaluation tour + Jupyter exercises.
 - **Chain P — MLOps & Applied ML** *(planned)* · taking models to production — tracking, registries, monitoring, and serving.
 
 ### AI — understanding and building with modern models
 > *Why I'm learning this: I want to use AI well and understand what's actually happening underneath.*
 
 - **Chain E — AI Products** · a tool-using agent, a TTS note-taker, and a social-media manager.
-- **Chain M — Prompt AI & LLMs** *(planned)* · how LLMs work, building a tiny one from scratch, prompting for personal vs. professional use, a **non-invasive AI code reviewer**, and a **multi-agent dev system** whose agents build and test each other concurrently.
+- **Chain M — Prompt AI & LLMs** · **how LLMs work** (a live tokenizer + next-token + temperature playground) and **LLM apps & agents** (a step-through agent-loop simulator with guardrails) — both built interactive tours — plus prompting, a tiny LLM from scratch, a **non-invasive AI code reviewer**, and a **multi-agent dev system**.
 
 ### Specializations & role prep — turning learning into opportunities
 > *Why I'm learning this: I want my domain background and my target roles to show up clearly in the work.*
