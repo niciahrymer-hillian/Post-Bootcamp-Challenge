@@ -13,6 +13,31 @@
 
 ---
 
+## What this is, in one minute
+
+**The exercise:** I set myself a multi-year, self-designed engineering curriculum and I build it in
+public. Every subject I want to learn becomes a **project**; every project becomes **its own
+repository** with a lesson plan, an interactive tour, and skeleton code I have to actually fill in.
+Related projects are grouped into **chains** (A–T), where each project assumes the one before it.
+
+**This repository is the index, not the code.** It explains the plan and links out to the ~106
+project repos. Nothing here is a tutorial I followed — the curriculum, the lesson plans, and the
+build order are mine, which is the point of the exercise.
+
+**How to read it**
+
+| If you want to… | Go to |
+|---|---|
+| See the whole plan and its phases | [Learning Plan](docs/LEARNING_PLAN.md) |
+| See how projects depend on each other | [Chain Map](docs/CHAIN_MAP.md) |
+| See how this maps to real job roles | [Role Map](docs/ROLE_MAP.md) |
+| Jump straight to code | [The project map](#-the-full-project-map-built-so-far) below |
+
+**Status legend used throughout:** ✅ complete · 🟡 in progress · ⬜ scaffolded (lesson plan and
+skeleton written, build not started).
+
+> Some chains are deliberately **closed-source** and have no public link — noted where they appear.
+
 ## Why I built this
 
 When I finished my bootcamp, I knew the pace of my learning shouldn't slow down. I wanted a way to keep growing that was structured, honest, and something I could show — so I designed my own curriculum and built it in public.
@@ -69,14 +94,12 @@ I think about the chains in five groups — roughly the order I'm growing throug
 ### Specializations & role prep — turning learning into opportunities
 > *Why I'm learning this: I want my domain background and my target roles to show up clearly in the work.*
 
-- **Chain G — PropTech** · the **Centric** property-management platform, the **HomeMatch** rental marketplace, and the **Leasing-Agent** add-on — bringing my real-estate/leasing background into software.
+- **Chain G — PropTech** · a property-management operations platform, a rental marketplace, and a leasing add-on — bringing my real-estate/leasing background into software.
 
-> **Commercial products (proprietary — not open source).** Three of these are being taken to production for sale under a forming LLC, so their source is private and All-Rights-Reserved:
-> - **HomeMatch** — eligibility-first renter marketplace + landlord leads engine · **shipped ✅**
-> - **Centric** (formerly Entrada) — multi-tenant landlord/PM operations console: accounting, screening, and agentic AI (**Miranda**) including after-hours dispatch · **shipped ✅**
-> - **Keyholders** (formerly Leasing-Agent) — freelance leasing-agent staffing marketplace + field ops (GPS time-clock, on-call, technician PWA) that plugs into Centric · **shipped ✅**
->
-> The three deploy together as one system (one origin, three landing pages) and live in the private **Centric** repo.
+> **Note:** the Chain G projects are **closed-source**, so there are no public links for them here. The
+> engineering they exercise — multi-tenant data modeling, an accounting ledger, document generation
+> and e-signature, background agents, and a React operator console — shows up in the open projects
+> across Chains B, D, M, N, O and S, which are public and readable.
 
 - **Chain N — PropTech & Real-Estate Engineering** *(planned)* · valuation models, geospatial analytics, and occupancy dashboards.
 - **Chain S — FinTech Engineering** *(planned)* · payments, double-entry ledgers, market data, and risk.

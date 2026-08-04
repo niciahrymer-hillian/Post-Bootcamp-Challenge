@@ -4,9 +4,9 @@ A visual map of all chains and their dependencies. **Solid arrows (`──▶`) 
 
 ```
 CHAIN A — Java Mastery (skill chain)
-  Farmer-Froilan-Java ╌╌▶ Farmer-Froilan-Python ╌╌▶ Spring-Boot-REST-API ╌╌▶ Entrada-Clone
+  Farmer-Froilan-Java ╌╌▶ Farmer-Froilan-Python ╌╌▶ Spring-Boot-REST-API ╌╌▶ PropTech capstone
         (OOP/interfaces)      (ABCs/Protocols)        (Spring/JPA/JWT)        (full-stack capstone,
-                                                                              also Chain G capstone)
+                                                                              closed-source, Chain G)
 
 CHAIN B — Banking + FinTech (CODE dependency chain)
   Web-Scraper-Postgres-Pipeline ──▶ Banking-Data-Platform ──▶ Banking-Interface-Fraud-UI
@@ -47,7 +47,7 @@ CHAIN F — Systems & Languages (from scratch, no scaffolding)
   HTTP-Server-From-Scratch ╌╌▶ Custom-Language-Interpreter
 
 CHAIN G — PropTech
-  Leasing-Agent-App   +   Entrada-Clone (shared capstone, lives in Chain A)
+  Leasing add-on      +   PropTech capstone (shared capstone, lives in Chain A)
 
 CHAIN H — Business & Foundations
   CLI-Task-Manager (foundations starter)   +   BD-Marketing-CRM

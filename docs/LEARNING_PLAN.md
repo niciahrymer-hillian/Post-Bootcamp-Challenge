@@ -48,7 +48,7 @@ There are two kinds of "building on" in this plan:
 - **J-04a/J-04b/J-05/J-06** Cloud + Networking + Terraform → IaC fluency. *Verify: `terraform apply` provisions, `destroy` tears down cleanly.*
 
 ### Phase 5 — Capstones
-- **A-4 Entrada-Clone** → full-stack leasing platform; domain advantage + Java depth + PDF generation. *Verify: lease PDF generates, occupancy analytics correct.*
+- **A-4 PropTech capstone** (closed-source) → full-stack leasing platform; domain advantage + Java depth + PDF generation. *Verify: lease PDF generates, occupancy analytics correct.*
 - **I-04/I-05/I-09/I-10/I-11** → enterprise data tools (Snowflake, Azure, Teradata, Tableau, Django/Flask) to round out breadth.
 - **J-03 AI-Augmented-Development** → reflect on the AI workflow used throughout.
 
@@ -71,5 +71,5 @@ All ten chains are now defined (42 project repos total). Chains D–H were built
 - **D — Data & ML Pipelines:** ML-Model-Serving-API → Databricks-Medallion-ETL, plus an *applied* data-engineering trio — Data-Platform-IaC (Terraform) → Realtime-Event-Pipeline (Kafka + Spark) → Snowflake-dbt-Warehouse (Snowflake + dbt). The trio builds real systems with the same tools the Chain I deep dives teach in isolation. Fits after the Chain I data deep dives.
 - **E — AI Products:** AI-TTS-Notes → AI-Social-Media-Manager → AI-Agent-Assistant. Your AI-prompting background's showcase chain; the agent is the highest-signal capstone.
 - **F — Systems & Languages (from scratch):** HTTP-Server-From-Scratch → Custom-Language-Interpreter. No scaffolding by design — deep technical-understanding signal, and a low-pressure way to learn Go.
-- **G — PropTech:** Leasing-Agent-App + Entrada-Clone (shared with Chain A). Domain advantage from professional leasing/occupancy experience.
+- **G — PropTech:** leasing add-on + the PropTech capstone (shared with Chain A); both closed-source. Domain advantage from professional leasing/occupancy experience.
 - **H — Business & Foundations:** CLI-Task-Manager (the foundations starter — do this first of everything) + BD-Marketing-CRM.
