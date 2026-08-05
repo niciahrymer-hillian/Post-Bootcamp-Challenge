@@ -8,7 +8,7 @@
   Goal: connect the skill to (1) real roles that use it, (2) current industry
   demand, and (3) THIS portfolio owner's trajectory — data engineering /
   full-stack / PropTech (real-estate domain moat). Always link forward to the
-  related chain(s) so the portfolio reads as one connected curriculum.
+  related chain(s) so the portfolio reads as one connected program.
 
   Keep it specific and honest — no filler, no invented statistics. If you cite
   a trend, keep it general ("widely used in production data teams"), not a
@@ -37,7 +37,7 @@ pattern powers rent-roll reporting, occupancy analytics, and lease dashboards �
 domain most engineers can't speak to.
 
 **How it connects to the rest of the portfolio**
-<!-- Link the related chains so the curriculum reads as one system. -->
+<!-- Link the related chains so my projects read as one system. -->
 - Builds on: [Chain X — …](../../Chain-X/…)
 - Feeds into: [Chain Y — …](../../Chain-Y/…)
 

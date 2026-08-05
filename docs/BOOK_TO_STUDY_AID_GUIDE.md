@@ -27,7 +27,7 @@ Write these into a `docs/CURRICULUM.md` as an outline you own.
 
 ---
 
-## Step 2 — Sequence the curriculum
+## Step 2 — Sequence the learning track
 Order topics easy → hard, respecting prerequisites. For each topic define:
 - A one-paragraph **concept recap** (your words).
 - The **key idea / complexity** to internalize.

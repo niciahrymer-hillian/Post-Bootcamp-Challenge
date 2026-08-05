@@ -1,11 +1,11 @@
 # 🎯 Post-Bootcamp Challenge
 
-### My self-directed engineering curriculum — the learning journey I built to grow from bootcamp graduate into a well-rounded software, data, and AI engineer.
+### My self-directed engineering program — the learning journey I built to grow from bootcamp graduate into a well-rounded software, data, and AI engineer.
 
-[![Projects](https://img.shields.io/badge/Projects-106_across_20_chains-8A2BE2?style=for-the-badge)](#-the-curriculum)
+[![Projects](https://img.shields.io/badge/Projects-106_across_20_chains-8A2BE2?style=for-the-badge)](#-the-learning-track)
 [![Chains](https://img.shields.io/badge/Chains-A–T-378ADD?style=for-the-badge)](docs/CHAIN_MAP.md)
 [![Roles](https://img.shields.io/badge/Role_Map-SWE_·_Data_·_FinTech-0EA5E9?style=for-the-badge)](docs/ROLE_MAP.md)
-[![Status](https://img.shields.io/badge/Status-Learning_in_public-F59E0B?style=for-the-badge)](#-the-curriculum)
+[![Status](https://img.shields.io/badge/Status-Learning_in_public-F59E0B?style=for-the-badge)](#-the-learning-track)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue?style=for-the-badge)](LICENSE-GPL)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPLv3-blue?style=for-the-badge)](LICENSE-AGPL)
 
@@ -15,13 +15,13 @@
 
 ## What this is, in one minute
 
-**The exercise:** I set myself a multi-year, self-designed engineering curriculum and I build it in
+**The exercise:** I set myself a multi-year, self-designed engineering program and I build it in
 public. Every subject I want to learn becomes a **project**; every project becomes **its own
-repository** with a lesson plan, an interactive tour, and skeleton code I have to actually fill in.
-Related projects are grouped into **chains** (A–T), where each project assumes the one before it.
+repository** with a lesson plan and skeleton code I have to actually fill in. Related projects are
+grouped into **chains** (A–T), where each project assumes the one before it.
 
 **This repository is the index, not the code.** It explains the plan and links out to the ~106
-project repos. Nothing here is a tutorial I followed — the curriculum, the lesson plans, and the
+project repos. Nothing here is a tutorial I followed — the program, the lesson plans, and the
 build order are mine, which is the point of the exercise.
 
 **How to read it**
@@ -40,9 +40,9 @@ skeleton written, build not started).
 
 ## Why I built this
 
-When I finished my bootcamp, I knew the pace of my learning shouldn't slow down. I wanted a way to keep growing that was structured, honest, and something I could show — so I designed my own curriculum and built it in public.
+When I finished my bootcamp, I knew the pace of my learning shouldn't slow down. I wanted a way to keep growing that was structured, honest, and something I could show — so I designed my own program and built it in public.
 
-This is that curriculum. It's organized into **dependency chains** (A–T): each chain is a theme, and the projects inside it build on one another. Some chains share code (one project's database literally feeds the next); others share skills (each project assumes I've learned the one before). I add a chain when there's a subject I want to genuinely understand, not just list on a résumé.
+This is it. It's organized into **dependency chains** (A–T): each chain is a theme, and the projects inside it build on one another. Some chains share code (one project's database literally feeds the next); others share skills (each project assumes I've learned the one before). I add a chain when there's a subject I want to genuinely understand, not just list on a résumé.
 
 I learn best by building and by teaching, so every project is set up to do both.
 
@@ -51,12 +51,12 @@ I learn best by building and by teaching, so every project is set up to do both.
 Each project is its own repository, and every one ships with the same learning scaffolding:
 
 - **A lesson plan** — what I set out to learn, the concepts behind it, and a step-by-step build order.
-- **An interactive tour** — a split-panel, in-browser walkthrough where I can run real code (Python, SQL, Java) or work through concepts, plus a **"Check Your Understanding" quiz** to test myself.
-- **A "Why This Matters" note** — why I added this to my curriculum and how the skill applies to the work I want to do.
+- **An interactive tour** *(on completed projects)* — a self-contained HTML page: a split-panel, in-browser walkthrough where I run real code (Python, SQL, Java), plus a **"Check Your Understanding" quiz**. 16 are built so far; the rest are scaffolded and linked only once they're real.
+- **A "Why This Matters" note** — why I added this to my learning track and how the skill applies to the work I want to do.
 - **Skeleton code with `TODO`s** — so the project is something I actively build, not just read.
 - **Dual GPL / AGPL licensing** so the work is open.
 
-## 🧭 The curriculum
+## 🧭 The learning track
 
 I think about the chains in five groups — roughly the order I'm growing through them.
 
@@ -116,7 +116,7 @@ I think about the chains in five groups — roughly the order I'm growing throug
 | A-1 | Farmer-Froilan-Java | Interfaces, multiple contracts, JUnit | 🟡 | [↗](https://github.com/niciahrymer-hillian/Farmer-Froilan-Java) |
 | A-2 | Farmer-Froilan-Python | ABCs, Protocols, MRO; Java↔Python | 🟡 | [↗](https://github.com/niciahrymer-hillian/Farmer-Froilan-Python) |
 | A-3 | Spring-Boot-REST-API | Spring Boot, JPA, JWT, Swagger | 🟡 | [↗](https://github.com/niciahrymer-hillian/Spring-Boot-REST-API) |
-| A-4 | Real-Time-Chat-Service | Spring WebSocket/STOMP, rooms, presence, history (Java capstone) | ⬜ | [↗](https://github.com/niciahrymer-hillian/Real-Time-Chat-Service) |
+| A-4 | Real-Time-Chat-Service | Spring WebSocket/STOMP, rooms, presence, history (Java capstone) | ⬜ | *not yet published* |
 
 ### Chain B — Banking + FinTech ✅ *(tours complete)*
 | # | Project | What I'm learning | Status | Repo |
@@ -128,24 +128,24 @@ I think about the chains in five groups — roughly the order I'm growing throug
 ### Chain C — Full-Stack + Infrastructure
 | # | Project | What I'm learning | Status | Repo |
 |---|---------|-------------------|--------|------|
-| C-1 | Full-Stack-Job-Board | FastAPI + React + JWT, deployed | 🟡 | [↗](https://github.com/niciahrymer-hillian/Full-Stack-Job-Board) |
-| C-2 | Dockerized-Microservices | Docker Compose, Nginx, Celery, GHCR | ⬜ | [↗](https://github.com/niciahrymer-hillian/Dockerized-Microservices) |
-| C-3 | Ops-Management-Dashboard | WebSockets, RBAC, real-time UI | ⬜ | [↗](https://github.com/niciahrymer-hillian/Ops-Management-Dashboard) |
-| C-4 | Kubernetes-IaC-Deployment | Terraform + K8s + Helm | ⬜ | [↗](https://github.com/niciahrymer-hillian/Kubernetes-IaC-Deployment) |
+| C-1 | Full-Stack-Job-Board | FastAPI + React + JWT, deployed | 🟡 | *not yet published* |
+| C-2 | Dockerized-Microservices | Docker Compose, Nginx, Celery, GHCR | ⬜ | *not yet published* |
+| C-3 | Ops-Management-Dashboard | WebSockets, RBAC, real-time UI | ⬜ | *not yet published* |
+| C-4 | Kubernetes-IaC-Deployment | Terraform + K8s + Helm | ⬜ | *not yet published* |
 | C-5 | AI-Job-Search-Agent | Scheduled scraper + Claude résumé-match → emailed report | 🟡 | [↗](https://github.com/niciahrymer-hillian/AI-Job-Search-Agent) |
-| C-6 | E-Commerce-Order-Backend | Catalog, cart, inventory, order state machine, payments (Java) | ⬜ | [↗](https://github.com/niciahrymer-hillian/E-Commerce-Order-Backend) |
+| C-6 | E-Commerce-Order-Backend | Catalog, cart, inventory, order state machine, payments (Java) | ⬜ | *not yet published* |
 
 ### Chains D–J
-The remaining built chains — **D** (Data & ML Pipelines), **E** (AI Products), **F** (Systems from Scratch), **G** (PropTech), **H** (Business & Foundations), **I** (Data-Engineering Deep Dives), and **J** (Foundations / Qualify) — are scaffolded and being filled in project by project. See [CHAIN_MAP.md](docs/CHAIN_MAP.md) for the full list, and each repo for its lesson plan and interactive tour.
+The remaining built chains — **D** (Data & ML Pipelines), **E** (AI Products), **F** (Systems from Scratch), **G** (PropTech), **H** (Business & Foundations), **I** (Data-Engineering Deep Dives), and **J** (Foundations / Qualify) — are scaffolded and being filled in project by project. See [CHAIN_MAP.md](docs/CHAIN_MAP.md) for the full list, and each repo for its lesson plan.
 
 ### Chains K–T *(planned)*
 Hardware, Cybersecurity, LLMs, PropTech engineering, System Design, MLOps, Data Analytics, Data Science, FinTech, and Interview Prep — designed and queued. The [Role Map](docs/ROLE_MAP.md) shows how they line up against the roles I'm working toward.
 
 ## 🎯 Built with real roles in mind
 
-I keep a [Role Map](docs/ROLE_MAP.md) that connects each chain to the roles I'm preparing for — **Software Engineer, Data Engineer, Data Analyst, Data Scientist, and FinTech** — with the projects that demonstrate each skill and a study path for interviews. It keeps the curriculum honest: every chain earns its place by moving me toward work I actually want.
+I keep a [Role Map](docs/ROLE_MAP.md) that connects each chain to the roles I'm preparing for — **Software Engineer, Data Engineer, Data Analyst, Data Scientist, and FinTech** — with the projects that demonstrate each skill and a study path for interviews. It keeps the program honest: every chain earns its place by moving me toward work I actually want.
 
-## 🧰 Skills this curriculum covers
+## 🧰 Skills these projects cover
 
 | Category | Covered by |
 |----------|-----------|
@@ -157,20 +157,21 @@ I keep a [Role Map](docs/ROLE_MAP.md) that connects each chain to the roles I'm 
 | **AI** | LLM prompting, agents, RAG, model serving |
 | **Practices** | TDD, CI/CD, git workflow, RBAC, WCAG 2.1 AA, IaC, defensive security |
 
-## 🚀 How to explore this portfolio
+## 🚀 How to read this portfolio
 
-```bash
-# Each project is its own repo. Clone any one to start:
-git clone https://github.com/niciahrymer-hillian/Banking-Data-Platform.git
-cd Banking-Data-Platform
+This is a record of work, not a course to enrol in — the lesson plans are how *I* study, written
+first-person, and the skeletons are mine to fill in. If you're reviewing it, the fastest route is:
 
-# Read the lesson plan, then open the interactive tour in a browser:
-open docs/interactive/index.html     # macOS  (xdg-open on Linux)
+1. **Start here** — this page for the shape of the whole thing.
+2. **Pick a chain that matches the role you're hiring for** — the [Role Map](docs/ROLE_MAP.md) maps
+   chains to Software Engineer, Data Engineer, Data Analyst, Data Scientist, and FinTech.
+3. **Open one project's `docs/LESSON_PLAN.md`** — it states what I set out to learn, the build order,
+   the mistakes I was watching for, and why the project earns its place.
+4. **Read the code where the status is ✅ or 🟡.** Rows marked ⬜ are planned and honestly labelled;
+   I'd rather show the plan than pad the list.
 
-# Build from the skeleton — every TODO is a step in the lesson plan.
-```
-
-Each repo's interactive tour is also served free via **GitHub Pages** from its `docs/` folder.
+Where a project has a built interactive tour, its `docs/interactive/index.html` is a single
+self-contained page — no build step, no server. Open it in a browser.
 
 ---
 

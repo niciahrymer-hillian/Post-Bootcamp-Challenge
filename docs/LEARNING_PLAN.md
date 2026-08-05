@@ -1,6 +1,6 @@
 # 📖 Learning Plan — Post-Bootcamp-Challenge
 
-This document explains **why each chain exists**, **what order to build in**, and **how the chains reinforce each other**. The README is the storefront; this is the curriculum.
+This document explains **why each chain exists**, **what order to build in**, and **how the chains reinforce each other**. The README is the storefront; this is the learning track.
 
 ---
 
