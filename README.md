@@ -116,7 +116,7 @@ I think about the chains in five groups — roughly the order I'm growing throug
 | A-1 | Farmer-Froilan-Java | Interfaces, multiple contracts, JUnit | 🟡 | [↗](https://github.com/niciahrymer-hillian/Farmer-Froilan-Java) |
 | A-2 | Farmer-Froilan-Python | ABCs, Protocols, MRO; Java↔Python | 🟡 | [↗](https://github.com/niciahrymer-hillian/Farmer-Froilan-Python) |
 | A-3 | Spring-Boot-REST-API | Spring Boot, JPA, JWT, Swagger | 🟡 | [↗](https://github.com/niciahrymer-hillian/Spring-Boot-REST-API) |
-| A-4 | Real-Time-Chat-Service | Spring WebSocket/STOMP, rooms, presence, history (Java capstone) | ⬜ | *not yet published* |
+| A-4 | Real-Time-Chat-Service | Spring WebSocket/STOMP, rooms, presence, history (Java capstone) | ⬜ | [↗](https://github.com/niciahrymer-hillian/Real-Time-Chat-Service) |
 
 ### Chain B — Banking + FinTech ✅ *(tours complete)*
 | # | Project | What I'm learning | Status | Repo |
@@ -128,15 +128,49 @@ I think about the chains in five groups — roughly the order I'm growing throug
 ### Chain C — Full-Stack + Infrastructure
 | # | Project | What I'm learning | Status | Repo |
 |---|---------|-------------------|--------|------|
-| C-1 | Full-Stack-Job-Board | FastAPI + React + JWT, deployed | 🟡 | *not yet published* |
-| C-2 | Dockerized-Microservices | Docker Compose, Nginx, Celery, GHCR | ⬜ | *not yet published* |
-| C-3 | Ops-Management-Dashboard | WebSockets, RBAC, real-time UI | ⬜ | *not yet published* |
-| C-4 | Kubernetes-IaC-Deployment | Terraform + K8s + Helm | ⬜ | *not yet published* |
+| C-1 | Full-Stack-Job-Board | FastAPI + React + JWT, deployed | 🟡 | [↗](https://github.com/niciahrymer-hillian/Full-Stack-Job-Board) |
+| C-2 | Dockerized-Microservices | Docker Compose, Nginx, Celery, GHCR | ⬜ | [↗](https://github.com/niciahrymer-hillian/Dockerized-Microservices) |
+| C-3 | Ops-Management-Dashboard | WebSockets, RBAC, real-time UI | ⬜ | [↗](https://github.com/niciahrymer-hillian/Ops-Management-Dashboard) |
+| C-4 | Kubernetes-IaC-Deployment | Terraform + K8s + Helm | ⬜ | [↗](https://github.com/niciahrymer-hillian/Kubernetes-IaC-Deployment) |
 | C-5 | AI-Job-Search-Agent | Scheduled scraper + Claude résumé-match → emailed report | 🟡 | [↗](https://github.com/niciahrymer-hillian/AI-Job-Search-Agent) |
-| C-6 | E-Commerce-Order-Backend | Catalog, cart, inventory, order state machine, payments (Java) | ⬜ | *not yet published* |
+| C-6 | E-Commerce-Order-Backend | Catalog, cart, inventory, order state machine, payments (Java) | ⬜ | [↗](https://github.com/niciahrymer-hillian/E-Commerce-Order-Backend) |
 
-### Chains D–J
-The remaining built chains — **D** (Data & ML Pipelines), **E** (AI Products), **F** (Systems from Scratch), **G** (PropTech), **H** (Business & Foundations), **I** (Data-Engineering Deep Dives), and **J** (Foundations / Qualify) — are scaffolded and being filled in project by project. See [CHAIN_MAP.md](docs/CHAIN_MAP.md) for the full list, and each repo for its lesson plan.
+### Chain F — Systems & Languages, From Scratch
+| Project | What I'm learning | Status | Repo |
+|---------|-------------------|--------|------|
+| HTTP-Server-From-Scratch | Raw sockets, hand-written HTTP parsing, then the core loop in Go | ⬜ | [↗](https://github.com/niciahrymer-hillian/HTTP-Server-From-Scratch) |
+| Custom-Language-Interpreter | Lexer, parser, AST, tree-walking evaluator, closures, REPL | ⬜ | [↗](https://github.com/niciahrymer-hillian/Custom-Language-Interpreter) |
+
+### Chain I — Data-Engineering Deep Dives
+| Project | What I'm learning | Status | Repo |
+|---------|-------------------|--------|------|
+| SQL-Deep-Dive | Window functions, CTEs, EXPLAIN, index strategy | ⬜ | [↗](https://github.com/niciahrymer-hillian/SQL-Deep-Dive) |
+| DBT-Deep-Dive | Models, ref(), tests, seeds, snapshots, macros, lineage | ⬜ | [↗](https://github.com/niciahrymer-hillian/DBT-Deep-Dive) |
+| Snowflake-Deep-Dive | Storage/compute separation, Time Travel, zero-copy cloning, Snowpark | ⬜ | [↗](https://github.com/niciahrymer-hillian/Snowflake-Deep-Dive) |
+| Apache-Spark | Architecture, RDDs vs DataFrames, lazy evaluation, shuffles, skew | ⬜ | [↗](https://github.com/niciahrymer-hillian/Apache-Spark) |
+| Apache-Kafka | Topics, partitions, offsets, consumer groups, Connect, exactly-once | ⬜ | [↗](https://github.com/niciahrymer-hillian/Apache-Kafka) |
+| Apache-Airflow | DAGs, operators, sensors, XComs, scheduling, backfill, idempotency | ⬜ | [↗](https://github.com/niciahrymer-hillian/Apache-Airflow) |
+| ETL-ELT-Deep-Dive | ETL vs ELT, idempotency, incremental loads, CDC, SCDs | ⬜ | [↗](https://github.com/niciahrymer-hillian/ETL-ELT-Deep-Dive) |
+| Azure-Data-Stack | ADLS Gen2, Synapse, Data Factory, Databricks — and the AWS equivalents | ⬜ | [↗](https://github.com/niciahrymer-hillian/Azure-Data-Stack) |
+| Teradata-Intro | MPP architecture, primary-index distribution, QUALIFY, BTEQ, TPT | ⬜ | [↗](https://github.com/niciahrymer-hillian/Teradata-Intro) |
+| Tableau-BI-Dashboards | Dimensions vs measures, LOD expressions, table calcs, dashboard design | ⬜ | [↗](https://github.com/niciahrymer-hillian/Tableau-BI-Dashboards) |
+| Django-Flask-Review | Django MTV + ORM + DRF, Flask, compared against FastAPI | ⬜ | [↗](https://github.com/niciahrymer-hillian/Django-Flask-Review) |
+
+### Chain J — Just Enough to Qualify
+| Project | What I'm learning | Status | Repo |
+|---------|-------------------|--------|------|
+| DSA-OOP-Fundamentals | Big-O, core data structures, sorting, the four OOP pillars | ⬜ | [↗](https://github.com/niciahrymer-hillian/DSA-OOP-Fundamentals) |
+| Git-Collaboration-Workflow | Branching, PRs, code review, merge vs rebase | 🟡 | [↗](https://github.com/niciahrymer-hillian/Git-Collaboration-Workflow) |
+| Networking-Basics | CIDR, VPCs, routing, load balancers, DNS, security groups | ⬜ | [↗](https://github.com/niciahrymer-hillian/Networking-Basics) |
+| Cloud-Fundamentals-AWS | S3, EC2, Lambda, IAM, VPC — with a Terraform-provisioned project | ⬜ | [↗](https://github.com/niciahrymer-hillian/Cloud-Fundamentals-AWS) |
+| Cloud-Fundamentals-Azure | Blob Storage, Functions, Entra ID — mirroring the AWS project | ⬜ | [↗](https://github.com/niciahrymer-hillian/Cloud-Fundamentals-Azure) |
+| IaC-Terraform | Terraform from scratch — the capstone that ties Chain J together | ⬜ | [↗](https://github.com/niciahrymer-hillian/IaC-Terraform) |
+| AI-Augmented-Development | Using AI to write and review code well, with human oversight | 🟡 | [↗](https://github.com/niciahrymer-hillian/AI-Augmented-Development) |
+
+### Chains D, E, G, H
+**D** (Data & ML Pipelines), **E** (AI Products), **G** (PropTech) and **H** (Business & Foundations)
+are a mix of built and scaffolded work; several are closed-source and have no public link. See
+[CHAIN_MAP.md](docs/CHAIN_MAP.md) for the full list.
 
 ### Chains K–T *(planned)*
 Hardware, Cybersecurity, LLMs, PropTech engineering, System Design, MLOps, Data Analytics, Data Science, FinTech, and Interview Prep — designed and queued. The [Role Map](docs/ROLE_MAP.md) shows how they line up against the roles I'm working toward.
