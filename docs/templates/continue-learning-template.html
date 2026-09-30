@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  ============================================================================
+  REUSABLE "CONTINUE LEARNING + QUICK CHECK" COMPONENT   (Portfolio Standard #9)
+  ============================================================================
+  Goes UNDER each individual lesson in docs/interactive/index.html's left
+  panel — not just once at the end of the project. Two ways to use it:
+
+  (A) STANDALONE — open directly to see the pattern before wiring it in.
+
+  (B) EMBED PER LESSON (the actual integration) — for each lesson object in
+      the tour's LESSONS array, add two new fields:
+
+        {
+          title: "Idempotent Loads",
+          body: "...existing lesson HTML...",
+          continueLearning: [                      // 2–3 items, see rules below
+            { type:"read",  label:"PostgreSQL docs — ON CONFLICT (upsert)",
+              url:"https://www.postgresql.org/docs/current/sql-insert.html#SQL-ON-CONFLICT" },
+            { type:"watch", label:"Idempotency in data pipelines (conference talk)",
+              url:"https://example.com/real-verified-talk" }
+          ],
+          quickCheck: {                            // ONE question, this lesson only
+            q:"Why does an idempotent load use ON CONFLICT instead of plain INSERT?",
+            options:[
+              {t:"It's faster to type.", ok:false},
+              {t:"Re-running the load won't create duplicate rows.", ok:true},
+              {t:"It skips validation.", ok:false}
+            ],
+            explain:"ON CONFLICT lets a re-run resolve to an update instead of a duplicate insert — that's what makes the load safe to retry."
+          }
+        }
+
+      Render continueLearning as a small "📚 Continue Learning" block right
+      under the lesson body, and quickCheck as a single inline MCQ below that
+      (reuse the .opt/.explain classes and pick/feedback pattern from
+      quiz-template.html so it looks like the same system, not a bolt-on).
+      Getting quickCheck right unlocks the lesson's "Next" button — the
+      lesson isn't "done" until it's answered once (right or wrong; the
+      point is engagement with the material, not gatekeeping).
+
+  WHY A SEPARATE QUICK CHECK FROM THE END-OF-PROJECT QUIZ (Standard #7):
+  The end quiz stays as-is (5–8 questions, whole-project recap). This adds a
+  lighter, per-lesson checkpoint so a learner doesn't reach the final quiz
+  having half-forgotten lesson 1. When you build the end-of-project QUIZ
+  array, pull 1–2 of its questions FROM these quickCheck items (same idea,
+  can reword) so the two systems reinforce each other instead of duplicating
+  effort.
+
+  RESOURCE-CURATION RULES (same spirit as references/README.md and
+  BOOK_TO_STUDY_AID_GUIDE.md — do not skip these):
+  - Every link must be a REAL, currently-live URL you have verified (fetch or
+    search it, don't guess a URL from memory/pattern). A broken or invented
+    link is worse than no link.
+  - Prefer PRIMARY/official sources: language/framework docs, RFC/spec pages,
+    the vendor's own guide, a maintainer's or well-known engineer's post, a
+    university course page, or a well-known conference talk (YouTube is fine
+    for "watch" when it's a real, findable, on-topic recording — never a
+    placeholder or assumed-to-exist video).
+  - "read" = an article, doc page, or spec. "watch" = a video/talk. 2–3 links
+    per lesson, mixed or single-type as fits the topic (a from-scratch systems
+    lesson may have zero good videos — that's fine, use 2 reads instead of
+    forcing a bad video link).
+  - NEVER paraphrase or transcribe copyrighted material (a book, a paid
+    course) into the lesson body to avoid linking it — link to it instead, or
+    to a free equivalent. This mirrors the references/ rule: topic structure
+    is reusable, exact wording is not.
+  - Concept-only / from-scratch lessons (no live execution, e.g. Chain F) still
+    get continueLearning — link to the relevant spec/RFC or a "how it really
+    works" writeup instead of a tutorial.
+  ============================================================================
+-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Continue Learning — Template</title>
+<style>
+  :root{--bg:#141414;--accent:#8A2BE2;--text:#EDEDED;--muted:#9a9a9a;--panel:#ffffff0a;--ok:#2EA56B;--bad:#C2453E;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text)}
+  .wrap{max-width:720px;margin:0 auto;padding:32px 24px}
+  .cl{border:1px solid #ffffff1f;border-radius:10px;padding:16px 18px;margin-top:18px;background:var(--panel)}
+  .cl .cap{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;margin-bottom:10px}
+  .cl a{display:flex;align-items:center;gap:8px;color:var(--text);text-decoration:none;padding:8px 0;font-size:14px}
+  .cl a:hover{color:var(--accent)}
+  .cl .tag{font-size:11px;font-weight:700;text-transform:uppercase;color:var(--accent);min-width:44px}
+  .qc{border:1px solid #ffffff1f;border-radius:10px;padding:16px 18px;margin-top:12px}
+  .qc .cap{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;margin-bottom:10px}
+  .qc .qtext{font-size:15px;font-weight:600;margin-bottom:12px}
+  .qc .opt{display:block;width:100%;text-align:left;background:var(--panel);color:var(--text);border:1px solid #ffffff1f;border-radius:8px;padding:11px 13px;margin:7px 0;cursor:pointer;font-size:14px}
+  .qc .opt:hover:not(:disabled){border-color:var(--accent)}
+  .qc .opt.ok{border-color:var(--ok);background:#2ea56b22}
+  .qc .opt.bad{border-color:var(--bad);background:#c2453e22}
+  .qc .opt:disabled{cursor:default}
+  .qc .explain{display:none;margin-top:12px;padding:12px;border-left:3px solid var(--accent);background:#ffffff0d;border-radius:4px;font-size:13px;line-height:1.55}
+  .next-hint{font-size:12px;color:var(--muted);margin-top:10px;font-style:italic}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h2 style="color:var(--accent)">Lesson body goes here…</h2>
+  <p style="color:var(--muted)">(the existing left-panel lesson content — unchanged)</p>
+
+  <div class="cl">
+    <div class="cap">📚 Continue Learning</div>
+    <div id="cl-links"></div>
+  </div>
+
+  <div class="qc">
+    <div class="cap">✓ Quick Check</div>
+    <div id="qc-body"></div>
+    <div class="next-hint" id="qc-hint">Answer to unlock "Next lesson."</div>
+  </div>
+</div>
+
+<script>
+/* ---- EDIT PER LESSON: swap these two for the real lesson's data ---- */
+const CONTINUE_LEARNING = [
+  { type:"read",  label:"PostgreSQL docs — INSERT ... ON CONFLICT", url:"https://www.postgresql.org/docs/current/sql-insert.html#SQL-ON-CONFLICT" },
+  { type:"read",  label:"Fowler — Idempotent Receiver pattern", url:"https://martinfowler.com/eaaDev/IdempotentReceiver.html" }
+];
+const QUICK_CHECK = {
+  q:"Why does an idempotent load use ON CONFLICT instead of a plain INSERT?",
+  options:[
+    {t:"It's faster to type.", ok:false},
+    {t:"Re-running the load won't create duplicate rows.", ok:true},
+    {t:"It skips validation.", ok:false}
+  ],
+  explain:"ON CONFLICT lets a re-run resolve to an update instead of a duplicate insert — that's what makes the load safe to retry."
+};
+
+function renderContinueLearning(){
+  const box = document.getElementById('cl-links');
+  CONTINUE_LEARNING.forEach(item=>{
+    const a = document.createElement('a');
+    a.href = item.url; a.target = "_blank"; a.rel = "noopener";
+    a.innerHTML = '<span class="tag">'+(item.type==='watch'?'Watch':'Read')+'</span><span>'+item.label+'</span>';
+    box.appendChild(a);
+  });
+}
+function renderQuickCheck(){
+  const body = document.getElementById('qc-body');
+  body.innerHTML = '<div class="qtext">'+QUICK_CHECK.q+'</div><div id="qc-opts"></div><div class="explain" id="qc-explain">'+QUICK_CHECK.explain+'</div>';
+  const opts = document.getElementById('qc-opts');
+  QUICK_CHECK.options.forEach((o,idx)=>{
+    const b = document.createElement('button');
+    b.className = 'opt'; b.textContent = o.t;
+    b.onclick = ()=>{
+      if(b.disabled) return;
+      const btns = opts.querySelectorAll('.opt');
+      btns.forEach((bb,i)=>{ bb.disabled = true; if(QUICK_CHECK.options[i].ok) bb.classList.add('ok'); });
+      if(!o.ok) b.classList.add('bad');
+      document.getElementById('qc-explain').style.display = 'block';
+      document.getElementById('qc-hint').textContent = 'Nice — "Next lesson" is unlocked.';
+      // In the real tour: setLessonUnlocked(currentLessonId, true) here.
+    };
+    opts.appendChild(b);
+  });
+}
+renderContinueLearning();
+renderQuickCheck();
+</script>
+</body>
+</html>
