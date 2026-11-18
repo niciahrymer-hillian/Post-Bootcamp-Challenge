@@ -66,7 +66,7 @@ I think about the chains in five groups — roughly the order I'm growing throug
 - **Chain H — Business & Foundations** · a well-tested CLI + a CRM, plus **Agile delivery** — playable **Scrum** and **Jira** lessons (sprint simulator, burndown, live JQL) — to get structure, testing, and *how teams ship* right.
 - **Chain J — Just Enough to Qualify** · DSA, git workflow, cloud, networking, IaC, AI-augmented development — the baseline every role expects.
 - **Chain F — Systems & Languages, From Scratch** · an HTTP server and a language interpreter, because I understand a thing best when I've rebuilt it.
-- **Chain K — Hardware & Systems Foundations** *(planned)* · Linux on old hardware, circuits, Raspberry Pi, firewalls and home networking, a **cyberdeck** build (with cellular calling/SMS + music) and a **VPN simulator** — understanding the machine from the metal up.
+- **Chain K — Hardware & Systems Foundations** *(planned)* · Linux on old hardware, circuits, Raspberry Pi, firewalls and home networking, a **cyberdeck** build (with cellular calling/SMS + music), a **VPN simulator**, a self-hosted **doorbell cam with live view** and a **night-vision CCTV system** (Frigate NVR + phone alerts), and **CAD design with free library 3D printing** — understanding the machine from the metal up.
 
 ### Core engineering — building and shipping real software
 > *Why I'm learning this: I want to take an idea all the way to a deployed, maintainable application.*
